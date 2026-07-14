@@ -14,12 +14,25 @@ These reviews were conducted by prompting large language models to attack the dr
 
 ## The prompts are published
 
-The two surviving adversarial-review prompts for *Peership* are committed here:
+The surviving adversarial-review prompts are committed here:
 
-- [`02-peership/PROMPT_round1_adversarial_review.md`](02-peership/PROMPT_round1_adversarial_review.md)
-- [`02-peership/PROMPT_round2_integration_audit.md`](02-peership/PROMPT_round2_integration_audit.md)
+| Prompt | Solicited |
+|---|---|
+| [`02-peership/PROMPT_round1_adversarial_review.md`](02-peership/PROMPT_round1_adversarial_review.md) | The round-1 review of *Peership* v0.4 — the one that came back **FAIL** |
+| [`02-peership/PROMPT_round2_integration_audit.md`](02-peership/PROMPT_round2_integration_audit.md) | The round-2 integration audit |
+| [`05-peership-thesis/PROMPT_round1_canonical_adversarial_review.md`](05-peership-thesis/PROMPT_round1_canonical_adversarial_review.md) | The canonical adversarial review of **paper V** and its companion — the chain that ends in the **PASS** |
 
-They are published deliberately, because the strongest objection to a self-administered adversarial review is that nobody can tell whether the reviewer was told to attack hard or to bless. A reader can now check. The round-1 prompt directs the draft to be pasted into "GPT-5 / a non-Anthropic model" — a model from a different lineage than the one that drafted the essay — and demands the killing objection, a citation hit-list, an AI-tell hit-list, and "the objection I could not answer."
+They are published deliberately, because the strongest objection to a self-administered adversarial review is that nobody can tell whether the reviewer was told to attack hard or to bless. **A reader can now check, for the paper that carries the PASS.**
+
+Judge the instruction for yourself. Paper V's prompt says:
+
+> You are the hostile, expert adversarial reviewer for two linked documents… The author wants landed objections, not encouragement. Attack the strongest version of the argument. Do not soften, flatter, pad, or reward the draft for admitting a problem it has not solved.
+
+It names the corpus's known weak points under a heading reading "Known open debts: **attack these hardest**," and it forbids the cheap win as explicitly as it demands the hard one — *"Do not defeat the work by attaching positions it expressly rejects."* The round-1 *Peership* prompt likewise directs the draft to a non-Anthropic model and demands the killing objection, a citation hit-list, an AI-tell hit-list, and "the objection I could not answer."
+
+This does not make the reviews independent — the author still wrote the prompts, chose the models, and judged every disposition. It makes them **checkable**, which is the most that a self-administered review can honestly offer.
+
+Two notes on reading the prompts. They are **dated historical records of what a reviewer was told**, not live manifests: paper V's prompt embeds version pins and DOIs current at the handoff date, and where those disagree with [`../VERSION_MANIFEST.md`](../VERSION_MANIFEST.md), the manifest controls. And an earlier version (v1.0) of the canonical review exists but is **deliberately not committed** — the operative document is v1.1, and the whole downstream chain (the re-review, the gate confirmation, the receipt, the PASS) answers *that* text. Shipping a superseded review beside the operative one would invite a reader to audit the dispositions against the wrong document.
 
 Prompts are published; **chat transcripts are not**, and no private material is exposed.
 
@@ -79,6 +92,14 @@ What scrutiny this paper did receive, and where it lives:
 
 A reader comparing the five papers should know that **paper III received the least independent adversarial scrutiny as a paper**, and should weight its claims accordingly. Recording that is the point of this document.
 
+#### Held, not yet published: the ISONOMIA release-package reviews
+
+Adversarial review notes on the **ISONOMIA release package** — the whitepaper, the Tier-1 launch spec, the Path A simulation plan, and the calibration record — exist and are **held unpublished**. They are implementation-side documents: they review the specification and its evidence, not *The Isonomia Commons* as a paper.
+
+They are **not committed here**, and they are **not published in full**, because the [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) repository is **frozen** until a full release is scheduled. These notes are **marked for release at that time**, alongside the implementation record they belong to.
+
+This entry exists so that their existence is on the record now rather than discovered later. Until they are published, the statement above — that the ISONOMIA whitepaper was reviewed extensively upstream — should be read as **the author's account, not as something a reader can currently verify**. That is a real limitation, and it is named here rather than left for a critic to find.
+
 ### IV. *Constitution, Not Cage* (v1.0 deposited)
 
 | Document | Reviews | Type | Outcome |
@@ -97,6 +118,7 @@ The four-round chain, concluding **14 July 2026** with a **PASS**.
 
 | Document | Type | Outcome |
 |---|---|---|
+| [`05-peership-thesis/PROMPT_round1_canonical_adversarial_review.md`](05-peership-thesis/PROMPT_round1_canonical_adversarial_review.md) | **Review prompt** — the instruction the hostile reviewer was given | — |
 | [`05-peership-thesis/round1_canonical_adversarial_review.md`](05-peership-thesis/round1_canonical_adversarial_review.md) | Full hostile review (r1.1) | **FAIL** |
 | [`05-peership-thesis/round2_adversarial_rereview.md`](05-peership-thesis/round2_adversarial_rereview.md) | Draft-2 re-review | Conditional pass on the argument |
 | [`05-peership-thesis/round3_gate_confirmation_review.md`](05-peership-thesis/round3_gate_confirmation_review.md) | Draft-3 gate confirmation | Argument gate cleared; five narrow corrections outstanding |

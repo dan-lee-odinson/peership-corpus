@@ -27,11 +27,17 @@ The adversarial-review record for the corpus, organized per paper.
 
 Each paper's record now has **both halves**: the reviews (what was objected to) and the dispositions (what the author actually changed, and what he declined). A review alone shows what a critic said; a disposition shows what was conceded.
 
-## The prompts are published
+## The prompts are published — including the one behind the PASS
 
-[`02-peership/PROMPT_round1_adversarial_review.md`](02-peership/PROMPT_round1_adversarial_review.md) and [`02-peership/PROMPT_round2_integration_audit.md`](02-peership/PROMPT_round2_integration_audit.md) are committed deliberately.
+Three review prompts are committed: [`02-peership/PROMPT_round1_adversarial_review.md`](02-peership/PROMPT_round1_adversarial_review.md), [`02-peership/PROMPT_round2_integration_audit.md`](02-peership/PROMPT_round2_integration_audit.md), and — for the chain that ends in paper V's PASS — [`05-peership-thesis/PROMPT_round1_canonical_adversarial_review.md`](05-peership-thesis/PROMPT_round1_canonical_adversarial_review.md).
 
-A self-administered adversarial review invites one obvious objection: how does anyone know the reviewer was told to attack rather than to bless? The prompts answer it. Read them and judge for yourself what was demanded — the round-1 prompt asks for the killing objection, a citation hit-list, an AI-tell hit-list, and "the objection I could not answer," and directs the draft to a model from a different lineage than the one that wrote it.
+A self-administered adversarial review invites one obvious objection: how does anyone know the reviewer was told to attack rather than to bless? The prompts answer it, for the paper that carries the credential. Judge the instruction yourself:
+
+> You are the hostile, expert adversarial reviewer… The author wants landed objections, not encouragement. Attack the strongest version of the argument. Do not soften, flatter, pad, or reward the draft for admitting a problem it has not solved.
+
+It lists the corpus's known weak points under "Known open debts: **attack these hardest**," and it rules out the cheap win as firmly as it demands the hard one — *"Do not defeat the work by attaching positions it expressly rejects."*
+
+That does not make these reviews *independent*: the author still wrote the prompts, picked the models, and judged every disposition. It makes them **checkable**, which is the most a self-administered review can honestly claim.
 
 Prompts are published; **chat transcripts are not**. See [`../PROVENANCE.md`](../PROVENANCE.md) §6 for why the line is drawn there.
 
