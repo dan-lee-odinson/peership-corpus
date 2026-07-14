@@ -1,0 +1,100 @@
+# .gitignore — peership-corpus
+#
+# What belongs in this repository: the frozen PDFs, the editable sources that
+# exist, the arXiv submission source, the apparatus, and the documentation.
+# What does not: build by-products, archive bundles, duplicates, and anything
+# private.
+#
+# NOTE ON GIT LFS: Git LFS is deliberately NOT used. The corpus PDFs are small
+# enough for ordinary Git, and LFS would add a fetch dependency, a bandwidth
+# quota, and a way for a clone to arrive without its papers. Plain Git objects
+# are the more durable choice for an archival corpus.
+
+
+# ---------------------------------------------------------------------------
+# LaTeX build by-products
+# ---------------------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# EXCEPTION: *.bbl is NOT ignored.
+#
+# The usual LaTeX .gitignore drops .bbl as a BibTeX by-product. Here it is a
+# required deliverable: arXiv does not run BibTeX, so the compiled bibliography
+# must be shipped inside the submission package. Losing it would silently break
+# the arXiv build of the Thesis.
+#
+#   corpus/05-peership-thesis/arxiv/main.bbl  — REQUIRED, committed.
+#
+# The negations below are belt-and-braces: no pattern above matches .bbl today,
+# and none may be added later that does.
+!*.bbl
+!corpus/05-peership-thesis/arxiv/main.bbl
+
+
+# ---------------------------------------------------------------------------
+# Archive bundles (Zenodo uploads, arXiv submissions)
+# ---------------------------------------------------------------------------
+# The extracted arXiv SOURCE is committed — corpus/05-peership-thesis/arxiv/
+# {main.tex, main.bbl, references.bib} — because source is what can be read,
+# diffed, and corrected. The zips are not: they are re-derivable packaging, and
+# the authoritative bundle already lives in the Zenodo record.
+*.zip
+
+
+# ---------------------------------------------------------------------------
+# Duplicates, temporary copies, and render artifacts
+# ---------------------------------------------------------------------------
+*(1).*
+* (1).*
+*~
+*.bak
+*render-check*
+*draft-final*
+*_draft[0-9]*
+
+# DOS/8.3-truncated filenames produced by some PDF and mail tools
+*~1.PDF
+*~1.pdf
+*~[0-9].PDF
+*~[0-9].pdf
+
+
+# ---------------------------------------------------------------------------
+# Operating-system metadata
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+._*
+
+
+# ---------------------------------------------------------------------------
+# Editor and IDE settings
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+
+# ---------------------------------------------------------------------------
+# Private material — never committed
+# ---------------------------------------------------------------------------
+# Credentials, tokens, and local environment files. See PROVENANCE.md §6: the
+# non-disclosure of prompts, transcripts, and account data is deliberate.
+*.env
+.env*
+*credentials*
+*token*
+*secret*

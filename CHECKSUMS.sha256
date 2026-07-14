@@ -1,0 +1,61 @@
+# CHECKSUMS.sha256 — Peership Corpus v1.0.0
+#
+# Every frozen artifact in this repository, with its SHA-256 digest, the exact
+# filename it carries in its Zenodo deposit, and the record it came from.
+#
+# WHY THIS FILE EXISTS
+# PROVENANCE.md claims the committed artifacts are byte-identical copies of the
+# archived deposits. This file is what lets a stranger TEST that claim instead of
+# trusting it. It also lets an auditor match files across the one rename this
+# repository made (the ISONOMIA preprint, see VERSION_MANIFEST.md D2), where the
+# repository filename and the Zenodo filename deliberately differ.
+#
+# HOW TO VERIFY
+#   sha256sum -c CHECKSUMS.sha256
+# and, to check against the archive rather than against this file, download each
+# record's files from the DOI below and compare digests.
+#
+# VERIFIED 2026-07-14. Papers I-IV were checked against live downloads from their
+# Zenodo records. The thesis, the companion, and the three apparatus files were
+# checked against the deposit's own MANIFEST_sha256.txt AND against the copies
+# inside Peership_v1.0_complete_release.zip. All matched.
+#
+# ---------------------------------------------------------------------------
+# repository path                                    <- Zenodo filename @ record
+# ---------------------------------------------------------------------------
+# corpus/01-gods-and-slaves/Lee-Odinson_2026_Gods-and-Slaves_v1.2_preprint.pdf
+#   <- Lee-Odinson_2026_Gods-and-Slaves_v1.2_preprint.pdf  @ https://doi.org/10.5281/zenodo.21313987
+e27fc15d154e5038a7183429cd83d18b0367377cf17f96414092956328c1ea57  corpus/01-gods-and-slaves/Lee-Odinson_2026_Gods-and-Slaves_v1.2_preprint.pdf
+# corpus/02-peership/Lee-Odinson_2026_Peership_v1.0_preprint.pdf
+#   <- Lee-Odinson_2026_Peership_v1.0_preprint.pdf  @ https://doi.org/10.5281/zenodo.21315519
+0cf261f78a9f0031381c5d1752d6facdce497fc44aadc9f9714eea57daa65f7d  corpus/02-peership/Lee-Odinson_2026_Peership_v1.0_preprint.pdf
+# corpus/03-isonomia-commons/Lee-Odinson_2026_Isonomia-Commons_v1.1_preprint.pdf
+#   <- Lee-Odinson_2026_Isonomia-Commons_v1_1_preprint_UPDATE.pdf  @ https://doi.org/10.5281/zenodo.21343917
+75a998566e548a372da392674521a76156f1045a474d68c1b3a67a0b1876ccb2  corpus/03-isonomia-commons/Lee-Odinson_2026_Isonomia-Commons_v1.1_preprint.pdf
+# corpus/04-constitution-not-cage/Lee-Odinson_2026_Constitution-Not-Cage_v1.0_preprint.pdf
+#   <- Lee-Odinson_2026_Constitution-Not-Cage_v1.0_preprint.pdf  @ https://doi.org/10.5281/zenodo.21325361
+888d76d5ab9fe0d11fb03914b6423252eb7c3554e74c9f7836be88bcc3fb543a  corpus/04-constitution-not-cage/Lee-Odinson_2026_Constitution-Not-Cage_v1.0_preprint.pdf
+# corpus/05-peership-thesis/Lee-Odinson_2026_Peership-Thesis_v1.0.pdf
+#   <- Lee-Odinson_2026_Peership-Thesis_v1.0.pdf  @ https://doi.org/10.5281/zenodo.21359124
+91ce5cd3c4a1bef9083c2002719e230cf1ed2c88b1bfebcf2540856809ea58cf  corpus/05-peership-thesis/Lee-Odinson_2026_Peership-Thesis_v1.0.pdf
+# corpus/05-peership-thesis/source/Lee-Odinson_2026_Peership-Thesis_v1.0.md
+#   <- Lee-Odinson_2026_Peership-Thesis_v1.0.md (in release zip)  @ https://doi.org/10.5281/zenodo.21359124
+f556723771cd0a961d368611b08473f98e83a8760239f9cf7dcebcf509d11e37  corpus/05-peership-thesis/source/Lee-Odinson_2026_Peership-Thesis_v1.0.md
+# corpus/companions/peership-theses/Lee-Odinson_2026_Peership-Theses_One-Pager_v1.0.pdf
+#   <- Lee-Odinson_2026_Peership-Theses_One-Pager_v1.0.pdf  @ https://doi.org/10.5281/zenodo.21359124
+6dc12e45080d471309f7a5851328d71588627250a96dab67e4411eb0d0260f20  corpus/companions/peership-theses/Lee-Odinson_2026_Peership-Theses_One-Pager_v1.0.pdf
+# corpus/companions/peership-theses/source/Lee-Odinson_2026_Peership-Theses_One-Pager_v1.0.md
+#   <- Lee-Odinson_2026_Peership-Theses_One-Pager_v1.0.md (in release zip)  @ https://doi.org/10.5281/zenodo.21359124
+75651fd315fca7c95dab94cf72b37d1aca0064b408463210b7c0e739c9d5ef04  corpus/companions/peership-theses/source/Lee-Odinson_2026_Peership-Theses_One-Pager_v1.0.md
+# apparatus/peership_sourcebook.md
+#   <- peership_sourcebook.md (in release zip)  @ https://doi.org/10.5281/zenodo.21359124
+c7e99d8adcdc87e247926490e32b5a05161b0eda2097413f941369c2fe837088  apparatus/peership_sourcebook.md
+# apparatus/peership_claim_ledger.md
+#   <- peership_claim_ledger.md (in release zip)  @ https://doi.org/10.5281/zenodo.21359124
+f306f8caa9b3ea104662f149e9a8401bead63fec2a1586c79057be8296fb2e2c  apparatus/peership_claim_ledger.md
+# apparatus/peership_sources.bib
+#   <- peership_sources.bib (in release zip)  @ https://doi.org/10.5281/zenodo.21359124
+423ee3771e7c8dbdfa38e95959ade8c51dcee14cdae08e78752c85747a509f2f  apparatus/peership_sources.bib
+# reviews/post_gate_changes.md
+#   <- POST_GATE_CHANGES.md (in release zip)  @ https://doi.org/10.5281/zenodo.21359124
+2b8031de6b29fcf9a0674383b088b846fc7df51517cf8e06d35e5b2433983999  reviews/post_gate_changes.md

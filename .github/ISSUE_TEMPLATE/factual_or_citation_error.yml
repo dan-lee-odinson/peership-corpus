@@ -1,0 +1,121 @@
+name: Factual or citation error
+description: Report a false statement, a misattributed claim, a broken or wrong citation, or a mis-stated identifier in the papers or the apparatus.
+title: "[Error]: "
+labels: ["factual-error", "citation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Claim discipline
+
+        This corpus is a candidate research program, not an established school. Corrections are welcome and are the fastest way to improve it.
+
+        An error report is only usable if it is **pinpointed**. Please give the exact wording you are challenging (or the claim ID), say what is wrong with it, and give a source a skeptical reader could check. "This seems wrong" is not actionable; "page 7 attributes X to Pettit, but Pettit says Y at p. 112" is.
+
+        Two things to know before you file:
+
+        - **Papers I–IV are frozen PDFs.** They are archived on Zenodo and will not be silently edited. A confirmed error in them is recorded as a dated erratum in the apparatus (claim ledger and sourcebook), not by rewriting the archived file.
+        - **The apparatus is live and correctable.** `apparatus/peership_sources.bib` is the machine-readable source of truth; the sourcebook and the claim ledger must stay synchronized with it.
+
+        Claim IDs look like `CL-T2`, `CL-F7`, `CL-D3`. Resolve them in [`apparatus/peership_claim_ledger.md`](https://github.com/dan-lee-odinson/peership-corpus/blob/main/apparatus/peership_claim_ledger.md).
+
+  - type: dropdown
+    id: affected-work
+    attributes:
+      label: Affected paper, companion, or apparatus file
+      description: Where does the error appear? File one issue per affected file.
+      options:
+        - "I — Gods and Slaves (corpus/01-gods-and-slaves)"
+        - "II — Peership: A Framework for Equitable Human–Machine Relations (corpus/02-peership)"
+        - "III — The Isonomia Commons (corpus/03-isonomia-commons)"
+        - "IV — Constitution, Not Cage (corpus/04-constitution-not-cage)"
+        - "V — The Peership Thesis (corpus/05-peership-thesis)"
+        - "Companion — The Peership Theses, one-pager (corpus/companions/peership-theses)"
+        - "Apparatus — peership_sources.bib"
+        - "Apparatus — peership_sourcebook.md"
+        - "Apparatus — peership_claim_ledger.md"
+        - "Apparatus — search protocols (apparatus/search_protocols)"
+        - "Repository documentation (README, VERSION_MANIFEST, or other repo file)"
+        - "Other / not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: locator
+    attributes:
+      label: Section, page, or claim ID
+      description: "Give the tightest locator you have: a section number, a PDF page, a heading, or a claim ID (for example CL-T2)."
+      placeholder: "e.g. §4.2, p. 11 — or CL-D3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: quotation
+    attributes:
+      label: Exact quotation or claim ID text
+      description: Paste the disputed text verbatim. Do not paraphrase — the paraphrase is often where the disagreement really lives.
+      placeholder: |
+        > "…paste the exact sentence(s) here…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The alleged problem
+      description: What exactly is wrong? Say which kind of error this is — false statement, misattribution, wrong or missing citation, wrong DOI or version, mis-stated identifier, unsupported inference from a cited source.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: State the replacement wording, or the corrected identifier, as precisely as you can. If the correct answer is "delete the claim" or "weaken it to X", say so.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Primary or authoritative source
+      description: Give the source that establishes your correction — full citation, plus a DOI or stable URL. Prefer the primary text, the authoritative record (for example the Zenodo REST API for DOIs), or the peer-reviewed literature. Secondary summaries and model outputs are not sufficient.
+      placeholder: |
+        Author, Title, Publisher/Journal, Year. DOI: 10.xxxx/xxxxx
+    validations:
+      required: true
+
+  - type: input
+    id: pinpoint
+    attributes:
+      label: Pinpoint citation
+      description: The exact location inside that source — page, section, clause, or timestamp. A whole-book citation is not a pinpoint.
+      placeholder: "e.g. pp. 112–114 — or §3.1 — or 00:41:20"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: synchronization
+    attributes:
+      label: Synchronization rule
+      description: |
+        The three apparatus files must stay synchronized. If a correction lands in one, it must be mirrored in the others. Tick every artifact your proposed correction would touch, then acknowledge the rule.
+      options:
+        - label: "The bibliography — apparatus/peership_sources.bib (canonical machine-readable source of truth)"
+          required: false
+        - label: "The sourcebook — apparatus/peership_sourcebook.md (annotation, classification, corrections log)"
+          required: false
+        - label: "The claim ledger — apparatus/peership_claim_ledger.md (claim-level provenance)"
+          required: false
+        - label: "None of the three — the error is confined to a paper, companion, or repository document"
+          required: false
+        - label: "I understand that any accepted correction is mirrored across all affected apparatus files and logged with a date and a rationale, and that the frozen PDFs are not edited in place."
+          required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional. Related claim IDs, prior discussion, or a note on how confident you are.
+    validations:
+      required: false

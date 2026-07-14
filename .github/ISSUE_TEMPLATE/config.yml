@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Theoretical debate and open-ended questions
+    url: https://github.com/dan-lee-odinson/peership-corpus/discussions
+    about: For broader argument about Peership that is not a specific correction, objection, source, or design — interpretive questions, comparisons with other research programs, and general discussion. Use an issue when you want a tracked, resolvable change; use Discussions when you want to think in public.
+  - name: ISONOMIA code, simulations, or data
+    url: https://github.com/dan-lee-odinson/isonomia-path-a/issues
+    about: Issues about the ISONOMIA implementation itself — the simulation code, the parameter sweep, calibration, or the repository's documentation — belong in the isonomia-path-a repository. Issues about the ISONOMIA *paper* (The Isonomia Commons, corpus/03) belong here.

@@ -1,0 +1,103 @@
+name: Source proposal
+description: Propose a source for the bibliography and sourcebook — supporting, complicating, or opposing a corpus claim.
+title: "[Source]: "
+labels: ["source-proposal", "apparatus"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Claim discipline
+
+        The apparatus exists to keep the corpus honest about its own evidentiary base. Two rules govern what gets added and how it is labelled.
+
+        **The classification rule.** Every source is placed in exactly one primary category, and the scheme exists to prevent the annexation of independent writers into a Peership "tradition" they never joined. A source belongs to the **Direct Peership corpus** only if it *formulates or expressly adopts political Peership*. Work that is merely nearby — republican theory applied to AI, AI welfare, cooperative AI, relational ontology — is a debt, a neighbour, a rival, or a tool. It is not evidence that Peership has adherents.
+
+        **The uptake rule.** As of the last verification, **no independent uptake was identified in the sources scanned** — web, PhilPapers, Zenodo, and the GitHub repository, on 2026-07-13, re-confirmed 2026-07-14. The scan was expressly non-exhaustive, its queries were not archived, and the finding is a dated negative: it is not a claim that no uptake exists. Convergent work that arrives at similar conclusions *without citing the corpus* is **parallel invention**, and is recorded as such. It is not uptake, not influence, and not a citation of this work.
+
+        For each source, the sourcebook must be able to say whether it **supports**, **complicates**, or **opposes** a specific corpus claim. Please do that work here.
+
+  - type: textarea
+    id: citation
+    attributes:
+      label: Full citation
+      description: Author(s), title, venue or publisher, year, volume/pages or version. Give it in a form that could be transcribed into BibTeX without guesswork.
+      placeholder: |
+        Pettit, Philip. "On the People's Terms: A Republican Theory and Model of Democracy." Cambridge University Press, 2012.
+    validations:
+      required: true
+
+  - type: input
+    id: identifier
+    attributes:
+      label: Stable URL or DOI
+      description: A DOI, handle, arXiv ID, or other persistent identifier. If none exists, give the most stable URL available and say so — a source with no stable locator is harder to admit and will be flagged.
+      placeholder: "https://doi.org/10.xxxx/xxxxx"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Publication status
+      description: Frontier material — recent preprints, unpublished manuscripts, corporate research, and model self-reports — is admitted but flagged, and is never presented as settled literature.
+      options:
+        - "Peer-reviewed"
+        - "Published (not peer-reviewed, e.g. a book or edited volume without refereeing)"
+        - "Preprint"
+        - "Forthcoming"
+        - "Institutional publication (lab, agency, NGO, or company report)"
+        - "Journalism"
+        - "Primary text (classical, literary, legal, or archival source)"
+        - "Other (explain below)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Proposed classification
+      description: |
+        The sourcebook's six-category scheme (see `apparatus/peership_sourcebook.md` §2). Note the membership test for the first category: **"Direct Peership corpus" requires that the source formulates or expressly adopts political Peership.** Approaching similar questions, reaching similar conclusions, or being cited approvingly by the corpus does not qualify a source for it.
+      options:
+        - "1 — Direct Peership corpus (formulates or expressly adopts political Peership)"
+        - "2 — Intellectual foundations (supplies concepts the corpus uses directly)"
+        - "3 — Precursors and convergent approaches (approaches partnership, mutuality, or machine standing without asserting the Peership thesis)"
+        - "4 — Adjacent research programs (alignment, AI welfare, cooperative AI, AI rights, pluralistic alignment, relational ontology, Constitutional AI)"
+        - "5 — Critics and incompatible accounts (rival or critical work)"
+        - "6 — Implementation hypotheses (institutional designs instantiating some Peership principles)"
+        - "Tool or method (dataset, instrument, or technique used by the corpus, not an argumentative source)"
+        - "Unsure — propose a classification for me"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relationship
+    attributes:
+      label: The specific corpus claim it supports, complicates, or opposes
+      description: |
+        Name the claim — by claim ID (for example CL-F7, CL-T2, resolvable in `apparatus/peership_claim_ledger.md`) or by paper and section — and state the relation in one of the sourcebook's three terms: **supports**, **complicates**, or **opposes**. Then say how, with a pinpoint (page, section, clause).
+
+        A source that relates to the corpus only by general topic is not yet a source for a claim. Say which claim, or say plainly that you are proposing it as background.
+      placeholder: |
+        Opposes CL-P3 (Peership §2, "non-domination is sufficient for standing"): the author argues at pp. 88–91 that …
+    validations:
+      required: true
+
+  - type: textarea
+    id: analytical-labels
+    attributes:
+      label: Terminology check
+      description: |
+        Optional but useful. Does the source's author use the corpus's vocabulary (peership, cognitive peership, Command, Servitude, Dependent Bargain), or would applying it be an analytical classification imposed by us? The sourcebook marks imposed terms as **[analytical classification]** and never attributes them to the source author.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: parallel-invention
+    attributes:
+      label: Parallel invention acknowledgement
+      options:
+        - label: "I understand that convergent independent work which does not cite the corpus is **parallel invention, not uptake**, and that proposing such a source is not a claim that this corpus influenced it, was cited by it, or has independent adherents."
+          required: true
+        - label: "To the best of my knowledge, this source does cite or expressly engage the Peership corpus (tick only if true — it will be verified)."
+          required: false

@@ -1,0 +1,160 @@
+# CITATION.cff — Citation File Format 1.2.0
+# https://citation-file-format.github.io/
+#
+# ---------------------------------------------------------------------------
+# WHAT THIS FILE IDENTIFIES
+# ---------------------------------------------------------------------------
+# This file describes THE PEERSHIP CORPUS REPOSITORY: the GitHub repository
+# that collects the five frozen papers, the one-page companion, the apparatus
+# (bibliography, sourcebook, claim ledger), and the review chain.
+#
+# It does NOT describe any single paper. The papers are archived on Zenodo and
+# carry their own DOIs; those DOIs are listed in CITATIONS.md, not here.
+#
+# ---------------------------------------------------------------------------
+# WHY type: dataset
+# ---------------------------------------------------------------------------
+# CFF 1.2.0 offers exactly two top-level types: "software" and "dataset".
+# This repository contains NO executable code — it is a curated collection of
+# documents (PDFs, Markdown, a BibTeX bibliography, provenance records).
+# "software" would be false. "dataset" is the correct CFF category for a
+# structured, versioned document collection, and is the standard choice for
+# corpora of this kind. The Apache-2.0 file at LICENSE is reserved for any
+# future executable code or build scripts; it does not apply to the scholarly
+# material, which is CC BY 4.0 (see the file-level licence table in the README).
+#
+# ---------------------------------------------------------------------------
+# THREE INDEPENDENT VERSION LAYERS — do not substitute one for another
+# ---------------------------------------------------------------------------
+#   LAYER 1 — Paper versions (v1.0, v1.1, v1.2)
+#             Each document's own version, fixed at deposit. E.g. "Gods and
+#             Slaves" is at v1.2; "The Peership Thesis" is at v1.0.
+#
+#   LAYER 2 — GitHub corpus releases (v1.0.0, ...)
+#             THIS repository's release tags. The `version:` field below is a
+#             LAYER 2 value: it is the repository release, not a paper version.
+#             Bumping it does not restate, revise, or re-version any paper.
+#
+#   LAYER 3 — Zenodo DOIs (concept vs exact-version)
+#             The archival identifiers. Each Zenodo record has a concept DOI
+#             (all versions) and an exact-version DOI (one immutable deposit).
+#             Scholarly reference to a fixed text uses the EXACT-VERSION DOI.
+#             See CITATIONS.md.
+#
+# A GitHub release does NOT mint a new DOI. These layers move independently.
+#
+# ---------------------------------------------------------------------------
+# WHY THERE IS NO TOP-LEVEL doi: FIELD  (this is deliberate — do not "fix" it)
+# ---------------------------------------------------------------------------
+# THIS REPOSITORY HAS NO DOI.
+#
+# Zenodo record 10.5281/zenodo.21359124 identifies the canonical Peership
+# Thesis deposit — a different object from this repository. Placing that DOI in
+# the top-level `doi:` field would assert that one DOI identifies two distinct
+# objects, and would tell every citation manager that citing this repository is
+# the same as citing the thesis. It is not. The thesis DOI therefore appears
+# ONLY inside `preferred-citation:` below, where it correctly identifies the
+# work a reader should cite when they cite the ideas.
+#
+# GitHub–Zenodo auto-archiving is DELIBERATELY NOT ENABLED for this repository.
+# The Zenodo records are already the archival scholarly deposits; minting a
+# second, repository-level DOI on every release would create competing
+# identifiers for the same texts. If a repository DOI is ever wanted, it must be
+# minted as its own record for this collection — never by reusing 21359124.
+# ---------------------------------------------------------------------------
+
+cff-version: 1.2.0
+message: >-
+  If you use or refer to the material in this repository, please cite the
+  canonical Peership Thesis given under `preferred-citation`. To cite this
+  repository as a collection, use the metadata below and give the release
+  version. See CITATIONS.md for per-work citations, and for the distinction
+  between concept DOIs and exact-version DOIs.
+
+title: "The Peership Corpus"
+
+type: dataset  # a curated document collection; see the note above
+
+authors:
+  - family-names: Lee-Odinson
+    given-names: Dan
+    orcid: "https://orcid.org/0009-0009-9504-0796"
+
+# LAYER 2: this is the REPOSITORY release version, not a paper version.
+version: "1.0.0"
+date-released: "2026-07-14"
+
+repository-code: "https://github.com/dan-lee-odinson/peership-corpus"
+
+# CC BY 4.0 governs all scholarly material in this repository (papers, PDFs,
+# Markdown, apparatus, bibliography, documentation). The Apache-2.0 LICENSE file
+# is reserved for executable code; the repository currently contains none.
+license: CC-BY-4.0
+
+abstract: >-
+  A curated corpus of the Peership research program: five frozen preprints, a
+  one-page companion, a synchronized scholarly apparatus (bibliography,
+  annotated sourcebook, claim-level provenance ledger), and the adversarial
+  review chain. The corpus does not claim that present AI systems are
+  conscious, persons, or peers; it asks what institutions would be required if
+  credible candidates for moral and political standing emerge. Peership is a
+  candidate constitutional research program, not an established school with
+  independent uptake.
+
+keywords:
+  - peership
+  - human-machine relations
+  - AI governance
+  - political philosophy
+  - constitutional theory
+  - republican non-domination
+  - moral status
+  - machine agency
+  - AI ethics
+  - research corpus
+  - claim provenance
+  - ISONOMIA
+
+# ---------------------------------------------------------------------------
+# PREFERRED CITATION — the canonical thesis
+# ---------------------------------------------------------------------------
+# This is the work to cite when citing the ideas, rather than the repository
+# container. The DOI below is the EXACT-VERSION DOI of the v1.0 deposit; it is
+# the identifier scholarly references to this fixed text should use.
+# The concept (all-versions) DOI of the same record is 10.5281/zenodo.21359123
+# and is deliberately not used here, because a citation should resolve to the
+# exact text that was read.
+#
+# `type: article` is used because CFF 1.2.0 has NO "preprint" type. The work is
+# a PREPRINT, not a journal article; the `notes` field below records this so the
+# preprint status survives any export.
+# ---------------------------------------------------------------------------
+preferred-citation:
+  type: article
+  title: >-
+    The Peership Thesis: A Constitutional Research Program for Human–Machine
+    Relations
+  authors:
+    - family-names: Lee-Odinson
+      given-names: Dan
+      orcid: "https://orcid.org/0009-0009-9504-0796"
+  year: 2026
+  month: 7
+  version: "v1.0"  # LAYER 1: the paper's own version
+  doi: "10.5281/zenodo.21359124"  # EXACT-VERSION DOI of the v1.0 deposit
+  url: "https://doi.org/10.5281/zenodo.21359124"
+  publisher:
+    name: Zenodo
+  license: CC-BY-4.0
+  notes: >-
+    Preprint. NOT peer reviewed: no journal, no editor, no independent human
+    referee. It passed a four-round adversarial review conducted with large
+    language models (documented in reviews/); that is quality control, it is
+    not peer review, it is not offered as a substitute for peer review, and it
+    is not evidence of machine political agency. CFF 1.2.0 has no "preprint"
+    type, so type: article is used. 10.5281/zenodo.21359124 is the
+    EXACT-VERSION DOI for the v1.0 deposit; the concept (all-versions) DOI is
+    10.5281/zenodo.21359123. This DOI identifies the thesis deposit, NOT the
+    GitHub repository described above, which has no DOI of its own. The same
+    record also contains the one-page "Peership Theses" companion, which has no
+    independent DOI and is cited by this DOI.

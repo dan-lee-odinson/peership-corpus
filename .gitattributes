@@ -1,0 +1,16 @@
+# Line-ending normalisation is DISABLED for this repository, deliberately.
+#
+# CHECKSUMS.sha256 asserts that every frozen artifact here is byte-identical to
+# its Zenodo deposit. If Git were allowed to convert line endings on checkout
+# (LF -> CRLF on Windows, say), the working-tree bytes would differ from the
+# archived bytes and `sha256sum -c CHECKSUMS.sha256` would fail for no reason
+# other than platform. For a corpus whose entire value proposition is auditable
+# provenance, that would be a self-inflicted wound.
+#
+# So: no eol conversion, anywhere, on any platform. What was deposited is what
+# you get.
+
+* -text
+
+# Belt and braces for the frozen binaries.
+*.pdf binary

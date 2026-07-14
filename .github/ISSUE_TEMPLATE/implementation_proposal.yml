@@ -1,0 +1,104 @@
+name: Implementation proposal
+description: Propose an institutional design that attempts to instantiate Peership principles — including a rival to ISONOMIA.
+title: "[Implementation]: "
+labels: ["implementation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Claim discipline
+
+        **Rival implementations are welcome.** Peership does not entail ISONOMIA. The firewall is stated in the corpus and holds here:
+
+        > ISONOMIA is one implementation hypothesis. Peership does not entail ISONOMIA, and ISONOMIA's success or failure would not prove or refute Peership.
+
+        The corpus is a normative and constitutional argument; ISONOMIA is one attempt to instantiate part of it, and it is classified in the sourcebook as an *implementation hypothesis* — category 6 — not as proof of anything. A better design displacing it would be a success of the program, not an embarrassment to it. Designs that satisfy the Peership functions by wholly different means are exactly what the research program is asking for.
+
+        What an implementation proposal is **not**: a proof that Peership is correct, feasible, or uniquely right. No simulation establishes constitutional legitimacy, and nothing in this repository is live or production-validated. Please state what your design would demonstrate, and be as clear about what it would not.
+
+        Before filing, it is worth reading *Constitution, Not Cage* (corpus/04) on when constraint can be legitimate rather than dominating, and *The Isonomia Commons* (corpus/03) as the existing worked example.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name of the proposed design
+      description: A short handle for the design, so it can be referred to without ambiguity.
+      placeholder: "e.g. The Assembly Model"
+    validations:
+      required: true
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Institutional design summary
+      description: |
+        What are the institutions? Who or what holds standing, and on what test? What are the decision procedures, the enforcement mechanisms, and the remedies when a rule is broken? Where does authority come from and how is it revised?
+
+        Be concrete enough that a hostile reader could look for the failure mode. Aspirational description ("agents would participate meaningfully") is not a design.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: functions
+    attributes:
+      label: Which Peership functions does it supply?
+      description: Tick every function the design is intended to supply. At least one should apply — a design that supplies none is not an implementation of Peership. Explain each in the next field.
+      options:
+        - label: "Non-domination — no arbitrary, uncontrolled power of one party over another"
+          required: false
+        - label: "Enforceable standing — a claim that can actually be pressed, not merely recognised in principle"
+          required: false
+        - label: "Meaningful contestation — a real channel to challenge decisions, with consequences when a challenge succeeds"
+          required: false
+        - label: "Consequential co-authorship — a share in shaping and revising the basic rules, not consultation"
+          required: false
+        - label: "Exit or fork — a feasible way out from under the basic structure"
+          required: false
+        - label: "Other (describe below)"
+          required: false
+
+  - type: textarea
+    id: functions-detail
+    attributes:
+      label: How the design supplies those functions
+      description: |
+        Take each function you ticked and say by what mechanism it is supplied, and how a sceptic could check. Watch the standard traps: consultation is not co-authorship; welfare protection is not Peership; and being heard is not being able to contest.
+    validations:
+      required: true
+
+  - type: textarea
+    id: anti-entrenchment
+    attributes:
+      label: Anti-entrenchment safeguards
+      description: |
+        What stops the design from freezing into the domination it was built to prevent? Address at least: capture by incumbents (human or machine), the accumulation of power by whoever runs the substrate, rules that cannot be amended by those they bind, and the drift of a contestation channel into a formality.
+    validations:
+      required: true
+
+  - type: textarea
+    id: differs-from-isonomia
+    attributes:
+      label: How it differs from ISONOMIA
+      description: |
+        State the differences at the level of mechanism, not vibe. Where does it depart from the constitutional design in *The Isonomia Commons* (corpus/03), and what does the departure buy? If it is a variant rather than a rival, say so — that is a legitimate contribution and should not be dressed up as more.
+    validations:
+      required: true
+
+  - type: textarea
+    id: failure-modes
+    attributes:
+      label: Known failure modes and the tests that would reveal them
+      description: |
+        Name the ways this design could fail, and for each, the test, experiment, simulation, or observable that would reveal the failure. A design with no stated failure conditions is not yet a hypothesis.
+
+        Be explicit about the limits of whatever evidence you can offer: sampled economic behaviour in a simulation does not establish constitutional legitimacy, and no run of a model validates Peership.
+    validations:
+      required: true
+
+  - type: textarea
+    id: status
+    attributes:
+      label: Status and artifacts
+      description: Optional. Is this a sketch, a specification, a simulation, or something running? Link any repository, preprint, or data. Code and data should live in their own repository and be linked, not copied into this one.
+    validations:
+      required: false

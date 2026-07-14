@@ -1,0 +1,96 @@
+name: Conceptual objection
+description: Challenge an argument, a definition, a distinction, or an inference in the corpus.
+title: "[Objection]: "
+labels: ["conceptual-objection"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Claim discipline
+
+        Objections are the point of the exercise. The corpus states its own failure conditions, and an objection that meets them is worth more than agreement.
+
+        Three conditions make an objection usable:
+
+        1. **State the proposition you are attacking, in the corpus's own words.** Not a summary, not the version you find easiest to refute.
+        2. **Steelman it before you attack it.** An objection to a weak reading is not an objection. If the strongest available reading of the proposition survives your argument, the argument has not touched the corpus.
+        3. **Say what would settle it.** An objection with no resolution condition is a mood, not an argument.
+
+        Two boundaries worth knowing, because objections often aim at claims the corpus does not make:
+
+        - The corpus does **not** claim that present AI systems are conscious, persons, or peers; that model self-reports establish consciousness or political agency; that capability or usefulness creates an entitlement to rule; that moral concern entails political membership; or that Peership means immunity from legitimate safety constraints. It asks what institutions would be required **if** credible candidates for moral and political standing emerge.
+        - The thesis is **defeasible and conditional**. Its compact form is: "When an artificial entity has interests capable of being wronged, can understand and answer to public norms, and is enduringly governed by a shared basic structure without feasible exit, it acquires a defeasible claim to contestatory membership in that structure. Full Peership adds a consequential share in shaping and revising the basic rules." The three antecedent conditions and the defeasible conclusion must survive any paraphrase you attack.
+
+  - type: input
+    id: locator
+    attributes:
+      label: Where the proposition appears
+      description: "Paper and section, or a claim ID from apparatus/peership_claim_ledger.md (claim IDs look like CL-T2, CL-F7)."
+      placeholder: "e.g. The Peership Thesis §3.2 — or CL-P4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposition
+    attributes:
+      label: The proposition being challenged
+      description: Quote it verbatim where you can. If you must reconstruct it, say so explicitly and mark the reconstruction as yours.
+      placeholder: |
+        > "…paste the proposition here…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steelman
+    attributes:
+      label: The strongest interpretation of that proposition (required)
+      description: |
+        Before objecting, state the proposition in its most defensible form — the reading a competent, sympathetic, well-informed proponent would give it. Resolve ambiguities in the corpus's favour. Grant it the qualifiers it actually carries (defeasible, conditional, non-exhaustive).
+
+        This is required because an objection to a weak reading is not an objection: it refutes a position nobody holds and leaves the real one untouched. If you cannot construct a strong reading, say why the proposition admits of none — that is itself a substantive charge, and a much stronger one.
+      placeholder: |
+        On its strongest reading, the claim is that … , which does not require … , and which survives the obvious counterexample X because …
+    validations:
+      required: true
+
+  - type: textarea
+    id: objection
+    attributes:
+      label: The objection
+      description: Now argue against the strong reading. Identify the specific move that fails — an invalid inference, an equivocation, a false premise, a counterexample, a distinction that collapses under pressure — and show why.
+    validations:
+      required: true
+
+  - type: textarea
+    id: resolution
+    attributes:
+      label: What evidence or argument would resolve it
+      description: |
+        What would have to be true for you to withdraw the objection? What would have to be true for the corpus to concede it? Name the argument, the empirical result, the counterexample, or the distinction that would settle the matter either way. If nothing could settle it, say that — and say what follows.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target
+    attributes:
+      label: Target of the objection
+      description: |
+        This distinction is load-bearing. **ISONOMIA is one implementation hypothesis. Peership does not entail ISONOMIA, and ISONOMIA's success or failure would not prove or refute Peership.**
+
+        So an objection that ISONOMIA's mechanism design is broken, gameable, or infeasible is an objection to *that design*, and can be answered by replacing it. An objection to Peership itself must attack the normative or conceptual argument — the antecedent conditions, the inference to contestatory membership, the notion of non-domination in play — and must survive the substitution of any other implementation. Please say which you are doing, so the objection is answered on its own terms rather than deflected.
+      options:
+        - "Peership generally — the normative or conceptual argument, independent of any implementation"
+        - "One implementation — ISONOMIA specifically (its institutional design, mechanisms, or simulations)"
+        - "One implementation — some other proposed design, not ISONOMIA"
+        - "Both, but for different reasons (explain below)"
+        - "Unsure — I would like help locating the target"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Related work and prior discussion
+      description: Optional. Existing literature that has made this objection, related claim IDs, or prior issues and discussions.
+    validations:
+      required: false

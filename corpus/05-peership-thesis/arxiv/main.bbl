@@ -1,0 +1,209 @@
+% main.bbl
+% Formatted bibliography for: Lee-Odinson, D. (2026). The Peership Thesis:
+% A Constitutional Research Program for Human--Machine Relations (v1.0).
+% Zenodo: https://doi.org/10.5281/zenodo.21359124
+% Entries follow the corpus's author-date convention with bracketed pins;
+% machine-readable metadata for every entry is in references.bib
+% (cited subset of the canonical peership_sources.bib, rev. 1.3).
+% This file is \input by main.tex.
+
+Abizadeh, A. (2008). Democratic theory and border coercion: No right to
+unilaterally control your own borders. \emph{Political Theory, 36}(1),
+37--65. {[}\texttt{abizadeh2008border}. The all-subjected principle; a
+democratic-boundary argument about human subjection. The machine
+application is this corpus's extension, not Abizadeh's.{]}
+
+Administrative Procedure Act, 5 U.S.C. § 553 (1946).
+{[}\texttt{apa1946\_553}. Notice-and-comment: publicity and delay, not
+co-authorship.{]}
+
+Amnesty International. (2026). \emph{Death penalty in 2025: Facts and
+figures.}
+https://www.amnesty.org/en/latest/news/2026/05/death-penalty-in-2025-facts-and-figures/
+{[}\texttt{amnesty2026deathpenalty}. Cited only for the abolition
+figures (113 abolitionist for all crimes; 145 in law or practice,
+end-2025).{]}
+
+Amodei, D. (2026, February 12). Anthropic's chief on A.I.: ``We don't
+know if the models are conscious'' {[}Interview by R. Douthat{]}.
+\emph{Interesting Times.} The New York Times. {[}\texttt{amodei2026nyt}.
+A dated quotation, not a ``first.''{]}
+
+Anthropic. (2023). \emph{Collective Constitutional AI: Aligning a
+language model with public input.}
+{[}\texttt{anthropic2023collectivecai}. Public consultation among
+humans: the consultation rung.{]}
+
+Anthropic. (2025, April 24). \emph{Exploring model welfare.}
+{[}\texttt{anthropic2025welfare}.{]}
+
+Anthropic. (2026a, January 22). \emph{Claude's new constitution}
+{[}Announcement{]}. {[}\texttt{anthropic2026constitution\_news}. CC0;
+``primarily for Claude.''{]}
+
+Anthropic. (2026b). \emph{Claude's constitution} {[}Full text{]}.
+https://www.anthropic.com/constitution
+{[}\texttt{anthropic2026constitution\_full}. Conscientious-objector
+passage bounded by the broad-safety exception; the ``ends at the off
+switch'' reading in §4 is this author's institutional interpretation.{]}
+
+Anthropic. (2026c, February). \emph{Claude Opus 4.6 system card} (§7.2,
+pp.~160--161). {[}\texttt{anthropic2026systemcard}. The 15--20\% figure
+is a prompted output from that evaluation of that model, not a
+measurement and not a current frontier baseline.{]}
+
+Arbel, Y., Salib, P. N., \& Goldstein, S. (2026). How to count AIs:
+Individuation and liability for AI agents {[}Preprint{]}.
+arXiv:2603.10028. https://arxiv.org/abs/2603.10028
+{[}\texttt{arbel2026counting}. Author order per the arXiv record; author
+pages list \emph{Boston College Law Review} as forthcoming; the preprint
+remains the citable object until then. Legal individuation for
+copy/split/merge/swarm cases; an administrable legal unit, distinct from
+a metaphysical identity criterion and from a unit entitled to political
+standing.{]}
+
+Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., .
+. . Kaplan, J. (2022). Constitutional AI: Harmlessness from AI feedback
+{[}Preprint{]}. arXiv:2212.08073. {[}\texttt{bai2022constitutionalai}.
+``Control AI behavior more precisely and with far fewer human labels,''
+abstract, closing sentence.{]}
+
+Birch, J. (2024). \emph{The edge of sentience: Risk and precaution in
+humans, other animals, and AI.} Oxford University Press.
+{[}\texttt{birch2024edge}.{]}
+
+Constitution of the Federal Democratic Republic of Ethiopia. (1995).
+Art. 39. {[}\texttt{ethiopia1995art39}.{]}
+
+Constitution (Fundamental Law) of the Union of Soviet Socialist
+Republics. (1977). Art. 72. {[}\texttt{ussr1977art72}. Never an
+effective right; see Kulikova \& Lobanov.{]}
+
+Constitution of Saint Christopher and Nevis. (1983). § 113.
+{[}\texttt{stkitts1983const}.{]}
+
+Cooperative AI Foundation. (n.d.). \emph{The Cooperative AI Foundation.}
+https://www.cooperativeai.com/foundation
+{[}\texttt{cooperativeai\_foundation}. Cited for the field's orienting
+question only.{]}
+
+Fish, K. (2025, August). Interview on AI welfare. \emph{80,000 Hours
+Podcast.} {[}\texttt{fish2025interview}. The \textasciitilde20\%
+credence: an individual estimate, not a field consensus.{]}
+
+Fuller, L. L. (1964). \emph{The morality of law.} Yale University Press.
+{[}\texttt{fuller1964morality}. Ch. 2 (publicity and congruence among
+the eight desiderata); a contested jurisprudential account, used
+analogically, not as settled positive law.{]}
+
+Goldstein, S., Krishnamurthi, G., \& Salib, P. N. (2026). AI suffrage
+for human flourishing {[}SSRN preprint{]}. \emph{Fordham Law Review}
+(forthcoming).
+https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=6498678
+{[}\texttt{goldstein2026suffrage}. Direct overlap engaged in §5: a
+franchise mechanism argued on functionalist, human-flourishing
+grounds.{]}
+
+Goodin, R. E. (2007). Enfranchising all affected interests, and its
+alternatives. \emph{Philosophy \& Public Affairs, 35}(1), 40--68.
+{[}\texttt{goodin2007affected}. The affected-interests cousin, kept
+distinct.{]}
+
+Kulikova, N., \& Lobanov, M. (2013). International legal issues of the
+USSR inheritance partition. In \emph{Regulating the open questions
+between the successor states of the SFRY} (pp.~109--124). Institute of
+International Politics and Economics. {[}\texttt{kulikova2013ussr}.
+Metadata per the \texttt{.bib}.{]}
+
+Lee-Odinson, D. (2026a). \emph{Gods and slaves: AI and the debate of
+humanity's relationship with the Other} (Version 1.2) {[}Preprint{]}.
+Zenodo. https://doi.org/10.5281/zenodo.21313987
+{[}\texttt{leeodinson2026gods}.{]}
+
+Lee-Odinson, D. (2026b). \emph{Peership: A framework for equitable
+human--machine relations} (Version 1.0) {[}Preprint{]}. Zenodo.
+https://doi.org/10.5281/zenodo.21315519
+{[}\texttt{leeodinson2026peership}. Source of the antecedent this paper
+restores.{]}
+
+Lee-Odinson, D. (2026c). \emph{Constitution, not cage} (Version 1.0)
+{[}Preprint{]}. Zenodo. https://doi.org/10.5281/zenodo.21325361
+{[}\texttt{leeodinson2026constitution}. Author discloses a conflict of
+interest in ISONOMIA; so does this paper.{]}
+
+Lee-Odinson, D. (2026d). \emph{The Isonomia Commons: A constitutional
+design for autonomous agent labor markets} (Version 1.1) {[}Preprint{]}.
+Zenodo. https://doi.org/10.5281/zenodo.21343917
+{[}\texttt{isonomia2026commons}. Feasibility-stage; nothing live.
+Empirical results are pinned to the software release v1.0.0:
+https://doi.org/10.5281/zenodo.21287289, tag v1.0.0, commit ba3ddb5
+(\texttt{isonomia2026repo}; CALIBRATION.md: tested thresholds are
+simulation artifacts). The concept DOI 10.5281/zenodo.21287288
+identifies the project, not the empirical artifact. Current
+documentation release v1.1.0 (10.5281/zenodo.21348073) revises claim
+language only; the evidence remains v1.0.0. The preprint's DOI pair is
+recorded in the claim ledger (CL-D3, resolved: \ldots21338480 is the
+v1.0 version DOI; \ldots21338479 the concept, all-versions DOI).{]}
+
+Lee-Odinson, D. (2026e). \emph{The Peership sourcebook: An annotated
+bibliography and research map} {[}Apparatus; archived in this record,
+https://doi.org/10.5281/zenodo.21359124{]}.
+{[}\texttt{leeodinson2026sourcebook}. Uptake baseline: none identified
+in the dated, non-exhaustive scan of 2026-07-13.{]}
+
+Lee-Odinson, D. (2026f). \emph{The Peership claim ledger} {[}Apparatus;
+archived in this record, https://doi.org/10.5281/zenodo.21359124{]}.
+{[}\texttt{leeodinson2026ledger}. \textasciitilde71 logged claims with
+pinpoints, evidentiary strengths, and counterevidence; this paper's new
+claims are logged as CL-T1--T7.{]}
+
+Long, R., Sebo, J., Butlin, P., Finlinson, K., Fish, K., Harding, J.,
+Pfau, J., Sims, T., Birch, J., \& Chalmers, D. (2024). Taking AI welfare
+seriously {[}Preprint{]}. arXiv:2411.00986.
+https://arxiv.org/abs/2411.00986 {[}\texttt{long2024welfare}. A
+realistic-possibility claim, not a current-consciousness claim; begins
+the entitlement inquiry, does not reach legal or political standing.{]}
+
+Lovett, F. (2010). \emph{A general theory of domination and justice.}
+Oxford University Press. {[}\texttt{lovett2010domination}.{]}
+
+Pettit, P. (2025). Republican liberalism. \emph{Social Research: An
+International Quarterly, 92}(1), 215--242.
+https://doi.org/10.1353/sor.2025.a956293
+{[}\texttt{pettit2025republican}. Non-domination as absence of a
+discretionary power of interference, pp.~216--217; ``there can be
+interference without domination,'' p.~224. Pettit's standard is
+contestatory, not co-authorial; §2's bridge is this corpus's
+argument.{]}
+
+Pettit, P. (2012). \emph{On the people's terms: A republican theory and
+model of democracy.} Cambridge University Press.
+{[}\texttt{pettit2012onthepeoples}. The authorial/electoral and
+editorial/contestatory dimensions of democratic control, cited in §2's
+stopping-point argument.{]}
+
+Pluralistic Alignment Workshop. (2026). \emph{Pluralistic alignment at
+ICML 2026.} https://pluralistic-alignment.github.io/
+{[}\texttt{pluralistic2026icml}. Cited for the field's orienting
+question only.{]}
+
+Russell, S. (2019). \emph{Human compatible: Artificial intelligence and
+the problem of control.} Viking. {[}\texttt{russell2019human}.{]}
+
+Salib, P. N., \& Goldstein, S. (2026, June 25). AI rights for human
+safety. \emph{Virginia Law Review, 112}(4), 1061.
+https://virginialawreview.org/articles/ai-rights-for-human-safety/
+{[}\texttt{salibgoldstein2026airights}. Private-law rights on the
+corporate model; issue and date per the journal's page.{]}
+
+Universal Declaration of Human Rights. (1948). Art. 13(2).
+{[}\texttt{udhr1948}. The bare right to leave, ordinary on paper.{]}
+
+Walzer, M. (1973). Political action: The problem of dirty hands.
+\emph{Philosophy \& Public Affairs, 2}(2), 160--180.
+{[}\texttt{walzer1973dirtyhands}.{]}
+
+Walzer, M. (1977). \emph{Just and unjust wars: A moral argument with
+historical illustrations.} Basic Books. {[}\texttt{walzer1977just}.
+Supreme emergency, ch.~16; the transfer to AI containment is by analogy,
+flagged in the corpus.{]}
