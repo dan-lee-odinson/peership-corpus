@@ -19,7 +19,7 @@
 # documents (PDFs, Markdown, a BibTeX bibliography, provenance records).
 # "software" would be false. "dataset" is the correct CFF category for a
 # structured, versioned document collection, and is the standard choice for
-# corpora of this kind. The Apache-2.0 file at LICENSE is reserved for any
+# corpora of this kind. The Apache-2.0 file at LICENSE-APACHE is reserved for any
 # future executable code or build scripts; it does not apply to the scholarly
 # material, which is CC BY 4.0 (see the file-level licence table in the README).
 #
@@ -87,7 +87,7 @@ date-released: "2026-07-14"
 repository-code: "https://github.com/dan-lee-odinson/peership-corpus"
 
 # CC BY 4.0 governs all scholarly material in this repository (papers, PDFs,
-# Markdown, apparatus, bibliography, documentation). The Apache-2.0 LICENSE file
+# Markdown, apparatus, bibliography, documentation). The Apache-2.0 LICENSE-APACHE file
 # is reserved for executable code; the repository currently contains none.
 license: CC-BY-4.0
 

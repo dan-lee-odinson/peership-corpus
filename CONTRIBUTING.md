@@ -152,11 +152,11 @@ Reviews in [`reviews/`](reviews/) are historical records of the release gate. Th
 
 ## 9. Licensing of contributions
 
-**Contributions to scholarly material are accepted under [CC BY 4.0](LICENSE-DOCS).**
+**Contributions to scholarly material are accepted under [CC BY 4.0](LICENSE).**
 
 That covers everything you are likely to contribute: the apparatus, the bibliography, the sourcebook, the claim ledger, the corrections log, the search protocols, the READMEs, the metadata, and the documentation. By opening a pull request you agree that your contribution is licensed CC BY 4.0 and that you have the right to license it.
 
-The Apache-2.0 [`LICENSE`](LICENSE) file is reserved for executable code and build scripts. **This repository currently contains no executable code.** The papers are never Apache-licensed; the file-level licence table in the README controls.
+The Apache-2.0 [`LICENSE-APACHE`](LICENSE-APACHE) file is reserved for executable code and build scripts. **This repository currently contains no executable code.** The papers are never Apache-licensed; the file-level licence table in the README controls.
 
 ---
 

@@ -166,4 +166,4 @@ If a specific, well-founded challenge requires evidence about how a particular p
 
 ---
 
-*This file is CC BY 4.0, like all scholarly material in this repository. The Apache-2.0 [`LICENSE`](LICENSE) file is reserved for executable code and build scripts; the repository currently contains none.*
+*This file is CC BY 4.0, like all scholarly material in this repository. The Apache-2.0 [`LICENSE-APACHE`](LICENSE-APACHE) file is reserved for executable code and build scripts; the repository currently contains none.*

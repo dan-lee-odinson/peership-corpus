@@ -55,4 +55,4 @@ create a new work, and it does not mint a new DOI.
 ## Licence
 
 CC BY 4.0, as with all scholarly material in this repository. See
-[`../../../LICENSE-DOCS`](../../../LICENSE-DOCS).
+[`../../../LICENSE`](../../../LICENSE).

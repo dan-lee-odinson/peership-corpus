@@ -133,8 +133,8 @@ The corpus was drafted with AI assistance and subjected to four rounds of advers
 
 | Content | Licence |
 |---|---|
-| Papers, PDFs, Markdown sources, apparatus, bibliography, documentation | CC BY 4.0 — [LICENSE-DOCS](LICENSE-DOCS) |
-| Build scripts or executable code, if any | Apache-2.0 — [LICENSE](LICENSE) |
+| Papers, PDFs, Markdown sources, apparatus, bibliography, documentation | CC BY 4.0 — [LICENSE](LICENSE) |
+| Build scripts or executable code, if any | Apache-2.0 — [LICENSE-APACHE](LICENSE-APACHE) |
 
 **The repository currently contains no executable code.** Every file presently in it is therefore CC BY 4.0. The Apache-2.0 file is reserved for code that may be added later; it does not apply to the papers, and the papers must not be described as Apache-licensed. The file-level table above controls.
 
@@ -165,5 +165,5 @@ peership-corpus/
 ├── .github/ISSUE_TEMPLATE/          The four correction forms
 ├── CHECKSUMS.sha256                 SHA-256 of every frozen artifact, vs. its deposit
 ├── CITATIONS.md  CITATION.cff  CONTRIBUTING.md  PROVENANCE.md  VERSION_MANIFEST.md
-└── LICENSE-DOCS (CC BY 4.0)  ·  LICENSE (Apache-2.0, reserved for code)
+└── LICENSE (CC BY 4.0)  ·  LICENSE-APACHE (reserved for code; none present)
 ```

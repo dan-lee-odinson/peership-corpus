@@ -31,7 +31,7 @@ Initial synchronized corpus release. This assembles, for the first time in one p
 - **Dated search-protocol infrastructure** in [apparatus/search_protocols/](apparatus/search_protocols/): a record of the sources and domains actually scanned, the dates, and the results, with the explicit limitation that the exact query strings were never archived and the scan was not exhaustive, plus a forward-looking template so that future re-runs are reproducible.
 - **The full review chain** in [reviews/](reviews/) — the canonical hostile review, the draft-2 conditional pass, the draft-3 gate confirmation and receipt, the draft-4 PASS, the gate dispositions, and the post-gate change log. The corpus passed a four-round adversarial review on 14 July 2026, using models from different laboratories. Nothing in that process is evidence of machine political agency. These documents are non-authoritative: the frozen papers and the synchronized apparatus control.
 - **[VERSION_MANIFEST.md](VERSION_MANIFEST.md)** — the authoritative version record: the three version layers, the one authoritative version table, the ISONOMIA evidence table (with its limitation), the recorded discrepancies, and the apparatus-version note.
-- **Licence files** — [LICENSE-DOCS](LICENSE-DOCS) (CC BY 4.0) and [LICENSE](LICENSE) (Apache-2.0).
+- **Licence files** — [LICENSE](LICENSE) (CC BY 4.0, governs everything currently in the repository) and [LICENSE-APACHE](LICENSE-APACHE) (Apache-2.0, reserved for executable code, of which there is none).
 
 ### Established
 
