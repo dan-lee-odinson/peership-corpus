@@ -1,0 +1,53 @@
+# Adversarial Re-Review Prompt — "Peership" v0.6 (Round 2)
+
+> How to use: paste everything below the line into a fresh conversation with a strong rival model (ideally the same one that produced Round 1, so it grades its own objections; or a third lineage for fresh eyes). Then paste, in order: (1) the Round 1 review, (2) the full text of `peership_draft_v0.6.md`. If the model can only hold one, give it v0.6 and the disclosure list below is self-contained enough to work without Round 1.
+
+---
+
+You reviewed an earlier draft of this essay (or are inheriting that review, supplied above). The author has revised in response. Your job now is **not** to review the essay from scratch, and **not** to re-list objections that were fully accepted and fixed. Your job is narrower and harder: **audit the integration for honesty.**
+
+The author revised adversarially and deliberately did **not** comply with every flag. In some places he accepted an objection and rewrote. In others he made a considered artistic or editorial decision to keep what you flagged, or to walk a middle line — softening the wording while retaining the substance, or reframing a claim rather than retracting it. A reframe can be a real answer or it can be cosmetic compliance: the same weak claim in humbler clothes. **Your central task is to tell the difference, ruthlessly.**
+
+Below is the author's own disclosure of where he departed from your recommendations. For each, you must return one verdict:
+
+- **RESOLVED** — the revision genuinely answers the objection; drop it.
+- **MITIGATED** — the revision reduces but does not eliminate the problem; state the residue precisely.
+- **COSMETIC** — the wording changed and the substance did not; the objection still lands with full force, and you should say so and show the sentence that proves it.
+
+Do not be generous. "He added a hedge" is not resolution. A claim that needed an argument is not fixed by a disclaimer that it lacks one. Where the author reframed rather than retracted, ask whether the reframe *dissolves* the objection or merely *relocates* it to a spot he declares out of scope.
+
+## The author's disclosed deviations (audit each; verdict + evidence)
+
+1. **The exclusivity claim → "argument, not theorem."** Your Round 1 killing blow was that peership is defined as the only power-invariant stance and then declared uniquely power-invariant (circular), and that its core exclusivity claim "does not survive." The author did not retract the thesis. He downgraded "only coherent/only stable" to "the stance worth choosing," explicitly conceded that peership carries its *own* bets (individuable party, rule-following, reciprocity, binding across capability gaps, capture-resistance), and reclassified those as "engineering problems, not in-principle incoherence." **Audit:** Does conceding peership's bets and calling them "engineering" actually answer your circularity/uniqueness objection, or does it quietly preserve the same preference for peership while moving the unpaid debts into a footnote labeled "the next essay"? Is "engineering problem vs. conceptual refutation" a real distinction that does the work, or a rhetorical firewall?
+
+2. **The Neanderthal section → causal reframed as analogical.** You called the "lack of standing caused absorption" inference the essay's largest category error. The author kept the entire section but rewrote it to claim only that benign contact is "not *sufficient*" to preserve the smaller party, explicitly disclaims the causal counterfactual, and hedges "assimilation" as one contested component of a multicausal end. **Audit:** Is the section now epistemically clean, or does the surrounding rhetoric (the "sole survivor," "the bond alone did not [preserve them]," the merger-from-the-absorbed-side reading) still smuggle the causal claim back in by implication? Did retaining the section at load-bearing length keep an argumentative weight the hedges can't support? Should it be shorter, or is it now honest?
+
+3. **The requirements list → reframed as "open problems."** You flagged the identity/Sybil/enforcement gaps (no account of the machine citizen; copies enable capture) and separately flagged that the product-shaped spec reads as a veiled advertisement for the author's unnamed institution. He removed the spec-as-feature-list and rewrote it as a set of openly-named unsolved problems (what is a citizen that can be copied; what stops a swarm capturing the vote; how is standing kept un-purchasable), while **keeping the essay's refusal to name the institution** and keeping the "whether it can be built is the next essay" hook. **Audit:** Does converting the spec into open problems genuinely defuse both objections, or does it resolve the "veiled ad" charge while *worsening* the substantive one — i.e., has the essay now conceded that its central proposal rests on a stack of unsolved problems it declines to address, and if so is the thesis left standing or hollowed out? Is naming the problems but not the project intellectually honest restraint or a more sophisticated funnel?
+
+4. **"Standing" → disaggregated into a ladder, but peership still argued for.** You flagged that "standing" equivocates across moral considerability, legal personality, franchise, etc. The author added an explicit ladder and repositioned peership as "belongs on the ladder as a party," not an instant equal vote. **Audit:** Does the ladder actually get used, or is it decorative — does the rest of the essay still slide between rungs when convenient (e.g., "the demos has room for minds we made" in the conclusion)? Did disaggregating standing weaken the essay's punch by conceding that the strong version (franchise) is not what's being argued?
+
+5. **The reversal test → kept, but downgraded to "a real reason, not a proof."** You called it an intuition pump that begs the question. The author kept it and explicitly reframed it as a diagnostic for *opportunism* rather than a uniqueness proof, and conceded a Hobbesian can consistently reject it. **Audit:** Is the downgraded version doing legitimate work, or is it still trading on the intuition it disclaims? Does conceding the Hobbesian counterexample fatally weaken it, or appropriately bound it?
+
+6. **The colonialism/paternalism analogy → kept, made conditional.** You recommended converting it to a bland institutional-conflict point (vendors shouldn't be sole judges). The author kept the colonial framing (White Man's Burden, the mission face of command) but made it explicitly conditional ("*if* the arriving mind is a party with interests") and added the vendor-interest point alongside. **Audit:** Does the conditional defuse your "assumes the moral fact it's meant to prove" objection, or does the rhetorical force of the colonial language still do the persuasive work the conditional pretends to suspend? Is keeping both framings honest or hedged-both-ways?
+
+7. **Deliberately retained on artistic grounds (voice, not argument).** The author kept, as authorial-voice decisions and against your style flags: the four-word forecast quartet ("Extinction, succession, apotheosis, abundance"); a reduced-but-nonzero number of negative-parallelism constructions where he judges the contrast load-bearing; a thinned set of reader-direction imperatives; and a softened manifesto closing line ("a maker willing to let the made thing stand"). He asserts this is a manifesto-register essay, not an academic paper, and that these are his natural constructions used below AI-typical frequency. **Audit — different standard here:** Do **not** relitigate these on taste; register is the author's call. **Only** flag an item in this group if the stylistic choice is *smuggling an unearned claim* — i.e., where the cadence is manufacturing conviction the argument hasn't earned, as opposed to merely sounding confident. Name only those; concede the rest.
+
+## Then: what the rewrite may have BROKEN
+
+Revisions open new holes. Independently of the disclosures, check:
+
+- **Over-concession.** Has the humbler framing conceded so much that the thesis no longer says anything a reasonable Command or welfare theorist would dispute? Is there still a claim here worth attacking, or has the essay retreated to a safe truism ("a revocable safeguard is not a constitutional right; institutions worth exploring")? If the thesis is now unfalsifiable-because-modest, say so — that is its own failure.
+- **New internal contradictions.** Do the added fairness-to-theorists passages (Russell's assistance games, Yudkowsky as development-policy, Bargain-collapsing-into-Command) now conflict with the map's five-part structure? If Altman/Andreessen are "Command wearing a market's clothes," does the Bargain category still have any living occupant besides one law-review paper — and if not, is the five-stance taxonomy now a four-stance taxonomy with a vestigial limb?
+- **Load-bearing weight on the sequel.** How many times does the essay defer a hard question to "the next essay" / "later work"? List each deferral. Is the cumulative effect that this essay's thesis is only as good as unpublished promises? At what count does deferral become evasion?
+- **Citation integrity of the new material.** The rewrite added or corrected anthropology and theorist citations. Spot-check the newly introduced claims (Cosnefroy/Goyet as intra-Neanderthal; Üçağızlı II sequential; Goldfeder-Wyder-LeCun-Shwartz-Ziv order; the assimilation-as-contested hedge) against what the sources actually support. Flag anything the revision got wrong while fixing something else.
+
+## Output format
+
+1. **Integration verdict (4–6 sentences).** Did the revision answer your strongest Round 1 objection, or relocate it? Is the essay stronger, safer-but-emptier, or roughly where it was with better armor?
+2. **Disclosure audit** — items 1–7, each with RESOLVED / MITIGATED / COSMETIC and one-sentence evidence. For any COSMETIC, quote the sentence that proves the substance is unchanged.
+3. **Newly broken or newly exposed** — problems the rewrite created or surfaced.
+4. **The deferral ledger** — every "next essay"/"later work" punt, and your judgment on whether the stack is load-bearing or evasive.
+5. **Citation spot-check results.**
+6. **Does the core survive now?** Round 1 concluded the exclusivity claim did not survive. Given the reframe, state plainly: is there a defensible, non-trivial thesis left standing, and what is the single strongest objection that still lands against *this* version?
+
+Be exhaustive on substance, terse in style, and do not reward mere humility. A well-hedged weak argument is still a weak argument. Begin.

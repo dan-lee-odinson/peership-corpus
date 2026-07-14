@@ -129,7 +129,9 @@ Scope, expectations, and how corrections propagate through the three apparatus f
 
 ## Provenance and licensing
 
-The corpus was drafted with AI assistance and subjected to four rounds of adversarial review, completed 14 July 2026, using models from different laboratories as hostile readers. That process is a method of stress-testing arguments; it is not evidence of machine political agency, and nothing in it should be cited as such. Dan Lee-Odinson is solely responsible for every claim, error, and judgement in this corpus. AI systems are not credited as authors, because authorship entails bearing scholarly responsibility and they cannot bear it. The review chain is preserved in [reviews/](reviews/) and is non-authoritative: the frozen papers and the synchronized apparatus control. Full account: [PROVENANCE.md](PROVENANCE.md).
+The corpus was drafted with AI assistance, and **each paper was put through its own adversarial review cycle before it was deposited**, using models from different laboratories as hostile readers. There was no single review of the corpus as a whole: the four-round chain that concluded on 14 July 2026 with a PASS belongs to paper V, *The Peership Thesis*, and is not a credential for papers I–IV, which cleared their own earlier gates. Per-paper scope, outcomes, and gaps are recorded in [reviews/REVIEW_PROVENANCE.md](reviews/REVIEW_PROVENANCE.md).
+
+That process is a method of stress-testing arguments; it is not peer review, it is not evidence of machine political agency, and nothing in it should be cited as such. Dan Lee-Odinson is solely responsible for every claim, error, and judgement in this corpus. AI systems are not credited as authors, because authorship entails bearing scholarly responsibility and they cannot bear it. The review records are preserved in [reviews/](reviews/) and are non-authoritative: the frozen papers and the synchronized apparatus control. Full account: [PROVENANCE.md](PROVENANCE.md).
 
 | Content | Licence |
 |---|---|

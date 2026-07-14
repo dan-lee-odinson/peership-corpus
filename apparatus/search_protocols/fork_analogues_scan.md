@@ -3,7 +3,7 @@
 **DATED OPEN INFRASTRUCTURE.** This file records a review that was actually carried out, over a named and enumerated set of materials, with a stated result and stated limits. It is **not** a reproducible protocol, and the set of materials reviewed is small. See [The query strings and selection criteria were not archived](#the-query-strings-and-selection-criteria-were-not-archived), which is the most important section in this file.
 
 **Supports:** the *Peership Thesis* §9 scoped negative. Ledger **CL-T7**.
-**Review date:** 2026-07-13. **Re-confirmed:** 2026-07-14 (deposit day), no change. Wording narrowed at draft 4 on the reviewers' instruction (see [`../../reviews/post_gate_changes.md`](../../reviews/post_gate_changes.md), item 4).
+**Review date:** 2026-07-13. **Re-confirmed:** 2026-07-14 (deposit day), no change. Wording narrowed at draft 4 on the reviewers' instruction (see [`../../reviews/05-peership-thesis/post_gate_changes.md`](../../reviews/05-peership-thesis/post_gate_changes.md), item 4).
 **Run by:** Dan Lee-Odinson (maintainer).
 
 ---

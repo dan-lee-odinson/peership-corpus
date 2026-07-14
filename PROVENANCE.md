@@ -39,21 +39,25 @@ Every factual claim, citation, and DOI that survives into the deposited works wa
 
 ## 3. Adversarial review
 
-The corpus was subjected to a hostile review process before release. The reviewing models were drawn from **different laboratories** than the model or models used in drafting, and were prompted to attack the work rather than improve it. The review chain ran over four rounds and concluded on **14 July 2026** with a **PASS**.
+Every paper in this corpus was subjected to a hostile review process before it was deposited. The reviewing models were drawn from **different laboratories** than the model or models used in drafting, and were prompted to attack the work rather than improve it.
 
-The full record is in [`reviews/`](reviews/), and is non-authoritative: where a review and the frozen papers or the synchronized apparatus conflict, the papers and apparatus control.
+**Each paper ran its own review cycle.** They were not reviewed together, and no single review covers the corpus as a whole. The scope of each cycle is recorded in [`reviews/REVIEW_PROVENANCE.md`](reviews/REVIEW_PROVENANCE.md).
 
-The five documents of the review chain, in order:
+The **four-round chain concluding on 14 July 2026 with a PASS** belongs specifically to **paper V, *The Peership Thesis*** (and its one-page companion). It is not a credential for papers I–IV, which cleared their own, earlier gates, and it must not be cited as though the whole corpus passed a single four-round review.
+
+The full record is in [`reviews/`](reviews/), organized per paper, and is non-authoritative: where a review and the frozen papers or the synchronized apparatus conflict, the papers and apparatus control. Papers I, II and IV each have their own review directory; *The Isonomia Commons* (III) has a review cycle whose record is not yet in this repository, and that gap is stated rather than glossed — see [`reviews/REVIEW_PROVENANCE.md`](reviews/REVIEW_PROVENANCE.md).
+
+The five documents of **paper V's** chain, in order:
 
 | # | Document | Outcome |
 |---|---|---|
-| 1 | [`reviews/canonical_adversarial_review.md`](reviews/canonical_adversarial_review.md) | The full hostile review (r1.1) |
-| 2 | [`reviews/draft2_adversarial_rereview.md`](reviews/draft2_adversarial_rereview.md) | Conditional pass |
-| 3 | [`reviews/draft3_gate_confirmation_review.md`](reviews/draft3_gate_confirmation_review.md) | Gate confirmation; five narrower corrections required |
-| 4 | [`reviews/draft3_final_gate_receipt.md`](reviews/draft3_final_gate_receipt.md) | Receipt; the five corrections restated |
-| 5 | [`reviews/draft4_final_release_review.md`](reviews/draft4_final_release_review.md) | The PASS, 14 July 2026 |
+| 1 | [`reviews/05-peership-thesis/round1_canonical_adversarial_review.md`](reviews/05-peership-thesis/round1_canonical_adversarial_review.md) | The full hostile review (r1.1) |
+| 2 | [`reviews/05-peership-thesis/round2_adversarial_rereview.md`](reviews/05-peership-thesis/round2_adversarial_rereview.md) | Conditional pass |
+| 3 | [`reviews/05-peership-thesis/round3_gate_confirmation_review.md`](reviews/05-peership-thesis/round3_gate_confirmation_review.md) | Gate confirmation; five narrower corrections required |
+| 4 | [`reviews/05-peership-thesis/round3_final_gate_receipt.md`](reviews/05-peership-thesis/round3_final_gate_receipt.md) | Receipt; the five corrections restated |
+| 5 | [`reviews/05-peership-thesis/round4_final_release_review.md`](reviews/05-peership-thesis/round4_final_release_review.md) | The PASS, 14 July 2026 |
 
-Two supporting records accompany the chain: [`reviews/gate_dispositions.md`](reviews/gate_dispositions.md) (what was done with each gate item) and [`reviews/post_gate_changes.md`](reviews/post_gate_changes.md) (dated provenance for revisions made after the gate closed).
+Two supporting records accompany the chain: [`reviews/05-peership-thesis/gate_dispositions.md`](reviews/05-peership-thesis/gate_dispositions.md) (what was done with each gate item) and [`reviews/05-peership-thesis/post_gate_changes.md`](reviews/05-peership-thesis/post_gate_changes.md) (dated provenance for revisions made after the gate closed).
 
 This process is a form of quality control. It is not peer review in the institutional sense: no journal, no editor, no independent human referee. Nothing here should be read as a substitute for scholarly refereeing, and the corpus does not claim otherwise.
 
@@ -148,15 +152,17 @@ And the firewall, which governs how the implementation relates to the theory:
 
 ## 6. What is deliberately not disclosed
 
-This file discloses the *character* of the AI assistance and the *structure* of the review. It does not disclose:
+**The adversarial-review prompts ARE disclosed.** The two surviving review prompts for *Peership* are published in [`reviews/02-peership/`](reviews/02-peership/). They are the one piece of process that does carry evidential weight, because the strongest objection to a self-administered adversarial review is that nobody can tell whether the reviewer was instructed to attack hard or to bless. A reader can now check what was actually asked for: the killing objection, a citation hit-list, an AI-tell hit-list, and "the objection I could not answer," addressed to a model from a different lineage than the one that drafted the essay. A review whose prompt cannot be inspected is an assertion; publishing the prompt is what makes it a check.
 
-- private prompts or system prompts;
+What this file still does not disclose:
+
+- system prompts, and any private or unrelated prompting;
 - chat transcripts or session logs;
 - account data, API keys, subscription details, or vendor account identifiers.
 
-This omission is deliberate, and it is not an evasion. Three reasons.
+That omission is deliberate, and it is not an evasion. Three reasons.
 
-**It would not add evidential value.** What a reader needs in order to audit this corpus is the claims, the sources, the ledger that connects them, and a responsible author who will answer for them. A transcript would show how a sentence got its shape. It would not make a false citation true or a true one truer. The apparatus is the audit surface; the transcript is not.
+**It would not add evidential value.** What a reader needs in order to audit this corpus is the claims, the sources, the ledger that connects them, the prompts that solicited the criticism, and a responsible author who will answer for all of it. A transcript would show how a sentence got its shape. It would not make a false citation true or a true one truer. The apparatus is the audit surface; the transcript is not.
 
 **It would invite the confusion this corpus most needs to avoid.** Publishing transcripts of models producing objections and refinements would function, whatever the disclaimers, as a rhetorical exhibit — a suggestion that the reader is watching something think, and therefore watching something with a claim to be heard. That inference is exactly the one the corpus forbids (§3.1). The cleanest way not to trade on it is not to stage it.
 

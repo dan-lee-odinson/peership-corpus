@@ -1,37 +1,45 @@
 # Reviews
 
+The adversarial-review record for the corpus, organized per paper.
+
+**Start with [`REVIEW_PROVENANCE.md`](REVIEW_PROVENANCE.md)** — it is the index, and it states what each paper's cycle actually covered, what the verdicts were, and where the record is incomplete.
+
+## Read this before you read anything else here
+
 **REVIEW DOCUMENTS ARE NON-AUTHORITATIVE.** The frozen papers in [`../corpus/`](../corpus/) and the synchronized apparatus in [`../apparatus/`](../apparatus/) control. Where a review document and a released artifact disagree, the released artifact wins. These files are committed so that a reader can **audit** the released claims — see what was objected to, what was conceded, what was changed, and when — not because anything in them settles a question. A review is a record of a process, not a warrant.
 
-## The method
+**Each paper ran its own review cycle.** There is no single review of the corpus as a whole. The four-round chain that concluded on 14 July 2026 with a PASS belongs to **paper V**, *The Peership Thesis*. It is not a credential for papers I–IV, which cleared their own earlier gates, and it must not be cited as though the whole corpus passed one review.
 
-The canonical thesis paper and its one-page companion went through **four rounds of adversarial review, concluding on 14 July 2026**. Each round was conducted by prompting a large language model to attack the draft: to look for the killing objection, to check every claimed fix against the actual text rather than against the author's summary of it, and to verify citations, metadata, and file integrity independently. Models from **different laboratories** were used across the rounds so that a single model's blind spots would be less likely to survive the whole sequence. The author (Dan Lee-Odinson) is the sole human author and the responsible party for every disposition; nothing was accepted or rejected by a model.
+**This is not peer review.** No journal, no editor, no independent human referee. The reviews were produced by prompting large language models — drawn from different laboratories than the model used in drafting — to attack the drafts. That is quality control. The papers are preprints and have not been peer reviewed. The author (Dan Lee-Odinson) is the sole human author and the responsible party for every disposition; nothing was accepted or rejected by a model.
 
-The sequence ran: full hostile review (FAIL) → Draft 2 re-review (conditional pass on the argument) → Draft 3 gate-confirmation pass (argument gate cleared, five narrow corrections outstanding) → Draft 4 final release review (PASS).
+**Nothing here is evidence of machine political agency.** A model that produces a sharp objection has produced text. A corpus that argues about the conditions of machine political membership has to be scrupulous about this, because the cheat would be obvious and fatal. See [`../PROVENANCE.md`](../PROVENANCE.md) §3.1.
 
-## The documents, in order
+## Layout
 
-| File | What it is |
-|---|---|
-| [`canonical_adversarial_review.md`](./canonical_adversarial_review.md) | The full hostile review (revision 1.1, 13 July 2026). Reviews the whole corpus, the draft canonical paper and one-pager, the apparatus, and the `isonomia-path-a` repository. Verdict: **FAIL in its current form** — the narrower contestation claim survives, but the draft does not yet earn its stronger co-authorship conclusion. Explicitly *not* a replication of the 45,000-run sweep. |
-| [`draft2_adversarial_rereview.md`](./draft2_adversarial_rereview.md) | The re-review of Draft 2 (13 July 2026). Verdict: **conditional pass on the argument; not yet release-ready as a package.** The original killing objection is cleared; the remaining issues are narrower (bridge scope, the necessity of the institutional functions, disclosure of new content), and mechanical gates — search protocol, bibliography, apparatus synchronization, DOI metadata, one-page layout — still block deposit. |
-| [`draft3_gate_confirmation_review.md`](./draft3_gate_confirmation_review.md) | The short gate-confirmation pass on Draft 3 (14 July 2026), authorized by the previous round in lieu of a third full hostile review. Verdict: **conditional pass; the argument-level gate is cleared** — but five narrower corrections remain before deposit. |
-| [`draft3_final_gate_receipt.md`](./draft3_final_gate_receipt.md) | The receipt on the Draft 3 review package (14 July 2026). Confirms by SHA-256 that the transferred ZIP is genuine, intact Draft 3, then restates the five outstanding gate-confirmation corrections in full (§9 aggregation language; *How to Count AIs* author order; two stale canonical-section pointers; the fork-scan claim; the DOI broken by hyphenation in the rendered one-pager). Verdict: **still conditional**, on version-order grounds rather than argument grounds. |
-| [`draft4_final_release_review.md`](./draft4_final_release_review.md) | The final release review (14 July 2026). Verdict: **PASS** — all five gate items resolved, no detected regression, suitable to freeze as the canonical text. One qualification, on packaging rather than argument: the reviewed ZIP was a complete review package, not yet a complete arXiv upload package. |
-| [`gate_dispositions.md`](./gate_dispositions.md) | Draft 3's dispositions against the Draft 2 gate, item by item: what was accepted and implemented in the text, what was held pending the author's approval, and what remained the author's deposit-day work (search protocols, DOI assignment, third-party metadata verification). No gate item was rejected outright; several were resolved by reclassification rather than by the fix the reviewer proposed, and the table says so. |
-| [`post_gate_changes.md`](./post_gate_changes.md) | Dated post-gate revision provenance. Records the five corrections applied in Draft 4, and then a Draft 5 correction made after the PASS at the author's direction — a corpus-order metadata change (I. *Gods and Slaves* · II. *Peership* · III. *The Isonomia Commons* · IV. *Constitution, Not Cage* · V. *The Peership Thesis*) with no argumentative text altered. |
+| Directory | Paper | Records |
+|---|---|---|
+| [`01-gods-and-slaves/`](01-gods-and-slaves/) | I. *Gods and Slaves* | 1 — adversarial cross-essay review of v1.1, judged against *Peership* v0.10 |
+| [`02-peership/`](02-peership/) | II. *Peership* | 12 — including **both review prompts**, the round-1 review that **failed** the draft, five integration/confirmation audits, and the final-round gate |
+| — | III. *The Isonomia Commons* | **Record pending.** A cycle was run; its document is not yet in this repository. Stated, not hidden. |
+| [`04-constitution-not-cage/`](04-constitution-not-cage/) | IV. *Constitution, Not Cage* | 4 — two adversarial rounds, a self-red-team, and the publication gate |
+| [`05-peership-thesis/`](05-peership-thesis/) | V. *The Peership Thesis* | 7 — the four-round chain, the gate dispositions, and post-gate provenance |
 
-## A caveat, in the corpus's own voice
+## The prompts are published
 
-An adversarial review conducted with AI models is a **quality-control process**. That is the whole of what it is.
+[`02-peership/PROMPT_round1_adversarial_review.md`](02-peership/PROMPT_round1_adversarial_review.md) and [`02-peership/PROMPT_round2_integration_audit.md`](02-peership/PROMPT_round2_integration_audit.md) are committed deliberately.
 
-It is **not evidence of machine political agency**. A model asked to attack a draft and producing objections is doing textual criticism under instruction; nothing about that exercise shows that the model has interests, standing, or a claim to membership in anything. The corpus does not claim that present AI systems are conscious, persons, or peers, and it would be a self-serving misreading to treat its own production process as evidence for its subject matter. If anything, the reviews were used *because* their output could be checked line by line against primary sources by a human who remained responsible for every decision.
+A self-administered adversarial review invites one obvious objection: how does anyone know the reviewer was told to attack rather than to bless? The prompts answer it. Read them and judge for yourself what was demanded — the round-1 prompt asks for the killing objection, a citation hit-list, an AI-tell hit-list, and "the objection I could not answer," and directs the draft to a model from a different lineage than the one that wrote it.
 
-It is also **not peer review in the scholarly sense**. No independent scholar refereed these works. No journal or programme committee has evaluated them. There was no editor, no anonymity, no disciplinary community exercising judgment, and no possibility of the author being told "no" by anyone with standing to enforce it. **These are preprints. They have not been peer reviewed.** Cite them accordingly.
+Prompts are published; **chat transcripts are not**. See [`../PROVENANCE.md`](../PROVENANCE.md) §6 for why the line is drawn there.
 
-## What is not committed here
+## What the reviews cost the corpus
 
-Draft ZIPs, working packages, and raw conversation exports are **deliberately not committed**. The review documents refer to those artifacts by name and by SHA-256; the artifacts themselves are absent, and their absence is intentional rather than an oversight.
+These are not favourable documents, and they were not selected to flatter.
 
-Version history is provided by the repository's git history and by the Zenodo records, which are the archival deposits. A reader who wants to know what changed and when should read those, not a pile of intermediate ZIPs.
+The round-1 review of *Peership* v0.4 returned **FAIL** and killed the draft's central claim — that Peership was the *uniquely* coherent stance, invariant under the power ratio. That exclusivity argument does not appear in the published paper. What survived is the narrower distinction between welfare and constitutional standing, which is why the corpus now insists that welfare protection is a floor and not Peership.
 
-If complete development packages are ever published, they will be attached to a separate GitHub Release named **`development-archive`**, and will not be added to the main tree.
+The chain for paper V forced a doctrinal restoration: draft 1 had quietly broadened the thesis's antecedent to "enduringly subject to a shared institutional order," materially widening the eligible parties. The reviewer caught it, the original wording was restored, and the withdrawal is disclosed in the published paper (ledger **CL-T4**).
+
+## Not committed
+
+Draft ZIPs, working packages, and raw conversation exports are deliberately excluded. Git history and the Zenodo deposits provide version history. Complete development packages, if ever published, would be attached to a separate GitHub Release named `development-archive`.

@@ -171,15 +171,19 @@ The `.bib` is the canonical machine-readable source of truth; where the three di
 
 ## Review chain
 
-The corpus passed a **four-round adversarial review** on 14 July 2026, using models from different laboratories. **Nothing in that process is evidence of machine political agency.** The review documents are provided for auditability and are **non-authoritative**: the frozen papers and the synchronized apparatus control.
+**Each paper ran its own review cycle before deposit.** There is no single review of the corpus as a whole, and none should be claimed. The **four-round chain listed below belongs to paper V, *The Peership Thesis***, and concluded on 14 July 2026 with a PASS; it is not a credential for papers I–IV, which cleared their own earlier gates. The per-paper record — scope, outcomes, and the papers for which no review record survives — is in [reviews/REVIEW_PROVENANCE.md](reviews/REVIEW_PROVENANCE.md).
 
-- [reviews/canonical_adversarial_review.md](reviews/canonical_adversarial_review.md) — the full hostile review (r1.1)
-- [reviews/draft2_adversarial_rereview.md](reviews/draft2_adversarial_rereview.md) — conditional pass
-- [reviews/draft3_gate_confirmation_review.md](reviews/draft3_gate_confirmation_review.md) — gate confirmation, five narrower corrections
-- [reviews/draft3_final_gate_receipt.md](reviews/draft3_final_gate_receipt.md) — receipt, with the five corrections restated
-- [reviews/draft4_final_release_review.md](reviews/draft4_final_release_review.md) — the PASS
-- [reviews/gate_dispositions.md](reviews/gate_dispositions.md)
-- [reviews/post_gate_changes.md](reviews/post_gate_changes.md) — dated post-gate revision provenance
+**Nothing in any of these processes is evidence of machine political agency**, and none of it is peer review. The review documents are provided for auditability and are **non-authoritative**: the frozen papers and the synchronized apparatus control.
+
+The chain for paper V:
+
+- [reviews/05-peership-thesis/round1_canonical_adversarial_review.md](reviews/05-peership-thesis/round1_canonical_adversarial_review.md) — the full hostile review (r1.1)
+- [reviews/05-peership-thesis/round2_adversarial_rereview.md](reviews/05-peership-thesis/round2_adversarial_rereview.md) — conditional pass
+- [reviews/05-peership-thesis/round3_gate_confirmation_review.md](reviews/05-peership-thesis/round3_gate_confirmation_review.md) — gate confirmation, five narrower corrections
+- [reviews/05-peership-thesis/round3_final_gate_receipt.md](reviews/05-peership-thesis/round3_final_gate_receipt.md) — receipt, with the five corrections restated
+- [reviews/05-peership-thesis/round4_final_release_review.md](reviews/05-peership-thesis/round4_final_release_review.md) — the PASS
+- [reviews/05-peership-thesis/gate_dispositions.md](reviews/05-peership-thesis/gate_dispositions.md)
+- [reviews/05-peership-thesis/post_gate_changes.md](reviews/05-peership-thesis/post_gate_changes.md) — dated post-gate revision provenance
 
 ---
 
