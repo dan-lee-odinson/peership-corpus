@@ -92,13 +92,22 @@ What scrutiny this paper did receive, and where it lives:
 
 A reader comparing the five papers should know that **paper III received the least independent adversarial scrutiny as a paper**, and should weight its claims accordingly. Recording that is the point of this document.
 
-#### Held, not yet published: the ISONOMIA release-package reviews
+#### The upstream review: reviews held, dispositions public
 
-Adversarial review notes on the **ISONOMIA release package** — the whitepaper, the Tier-1 launch spec, the Path A simulation plan, and the calibration record — exist and are **held unpublished**. They are implementation-side documents: they review the specification and its evidence, not *The Isonomia Commons* as a paper.
+Adversarial review notes on the **ISONOMIA release package** — the whitepaper, the Tier-1 launch spec, the Path A simulation plan, and the calibration record — exist and are **held unpublished**. They are implementation-side documents: they review the specification and its evidence, not *The Isonomia Commons* as a paper. They are **not committed here** and **not published in full**, because the [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) repository is **frozen** until a full release is scheduled. They are marked for release at that time, with the implementation record they belong to.
 
-They are **not committed here**, and they are **not published in full**, because the [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) repository is **frozen** until a full release is scheduled. These notes are **marked for release at that time**, alongside the implementation record they belong to.
+**But the reviews being held does not make the upstream scrutiny unverifiable.** The *dispositions* — what the review actually changed — are already public, dated, and itemized in that repository, which is where the reader should go:
 
-This entry exists so that their existence is on the record now rather than discovered later. Until they are published, the statement above — that the ISONOMIA whitepaper was reviewed extensively upstream — should be read as **the author's account, not as something a reader can currently verify**. That is a real limitation, and it is named here rather than left for a critic to find.
+| Public record | What it evidences |
+|---|---|
+| [Whitepaper changelog](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/docs/ISONOMIA_Whitepaper_v0.6.3.md), v0.6 → v0.6.1 | An entry titled **"adversarial-review response"** — the review happened, and this is what it changed |
+| [Launch-spec changelog](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/docs/ISONOMIA_Tier1_Launch_Spec_v0.3.4.md), nine dated entries | Itemized revisions, including the v0.3.3 → v0.3.4 **claim-discipline** pass that restated overclaims in sampled-point terms and added an explicit no-claim-about-unsampled-points qualifier |
+| [`CALIBRATION.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/CALIBRATION.md) revision note | The same claim-discipline correction applied to the empirical record: "stable across the entire parameter space" → statements about the 300 sampled points only |
+| [`DECISIONS.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/DECISIONS.md) #35 | A spec↔code divergence caught by verification: the code was right, the spec text was wrong, and **the spec was corrected rather than the code** |
+
+Two details worth the reader's attention, because they are the kind of thing a corpus usually hides. The claim-discipline pass was **issued as a new version (v0.3.4) rather than a silent edit to v0.3.3**, precisely because v0.3.3 is the version embedded in the deposited preprint — the historical record was preserved instead of quietly overwritten. And the sampled-point correction is an admission *against interest*: it narrows what the 45,000-run sweep is allowed to claim.
+
+So the honest summary is: **the review documents are held; the record of what they changed is public.** A reader can verify that ISONOMIA's upstream material was adversarially reviewed and can see the corrections it produced. What they cannot yet do is read the reviews themselves and judge whether the dispositions were adequate. That remains open until the ISONOMIA release.
 
 ### IV. *Constitution, Not Cage* (v1.0 deposited)
 

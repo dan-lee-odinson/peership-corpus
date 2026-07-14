@@ -55,9 +55,11 @@ The frozen PDF's front matter mislabels ...21338480 as a concept DOI. The frozen
 
 Papers I, II, IV and V each went through their own adversarial review cycle, and the reviews and disposition records are published in [`reviews/`](../../reviews/). This paper did not. It was condensed from the ISONOMIA **whitepaper**, which had already been through an extensive development and review process upstream — that whitepaper is why ISONOMIA sits third in the canonical reading order — so the review pass on the preprint itself was **short** and produced no standalone review document.
 
-What scrutiny it did receive was of the specification and the simulations, not of the essay: the whitepaper and launch spec, the build-time `DECISIONS.md` and `BLOCKERS.md`, the calibration record, and the 45,000-run sweep. None of that is a substitute for adversarial review of the paper, and none of it is offered as one. **Simulation evidence is not paper review**, and those simulations establish sampled launch-economy behaviour only.
+What scrutiny it did receive was of the specification and its evidence, not of the essay. That upstream review is real and it is **publicly evidenced**, though in the implementation repository rather than here: the whitepaper's changelog carries an entry titled *"adversarial-review response"*; the launch spec's changelog records a claim-discipline pass that restated overclaims in sampled-point terms; `CALIBRATION.md` carries the matching revision note; and `DECISIONS.md` #35 records a spec↔code divergence in which the **spec was corrected rather than the code**. The review documents themselves are held pending that repository's scheduled release.
 
-A reader comparing the five papers should know that **this one received the least independent adversarial scrutiny as a paper**, and weight its claims accordingly. The full account is in [`reviews/REVIEW_PROVENANCE.md`](../../reviews/REVIEW_PROVENANCE.md).
+**None of that is a substitute for adversarial review of this paper, and none of it is offered as one.** Simulation evidence is not paper review, and those simulations establish sampled launch-economy behaviour only.
+
+A reader comparing the five papers should know that **this one received the least independent adversarial scrutiny as a paper**, and weight its claims accordingly. The full account — including what is verifiable today and what is not — is in [`reviews/REVIEW_PROVENANCE.md`](../../reviews/REVIEW_PROVENANCE.md).
 
 ## Files
 
