@@ -32,7 +32,9 @@ It names the corpus's known weak points under a heading reading "Known open debt
 
 This does not make the reviews independent — the author still wrote the prompts, chose the models, and judged every disposition. It makes them **checkable**, which is the most that a self-administered review can honestly offer.
 
-Two notes on reading the prompts. They are **dated historical records of what a reviewer was told**, not live manifests: paper V's prompt embeds version pins and DOIs current at the handoff date, and where those disagree with [`../VERSION_MANIFEST.md`](../VERSION_MANIFEST.md), the manifest controls. And an earlier version (v1.0) of the canonical review exists but is **deliberately not committed** — the operative document is v1.1, and the whole downstream chain (the re-review, the gate confirmation, the receipt, the PASS) answers *that* text. Shipping a superseded review beside the operative one would invite a reader to audit the dispositions against the wrong document.
+**One prompt in this corpus is *not* real, and the distinction is load-bearing.** The ISONOMIA audit trail ([`03-isonomia-commons/`](03-isonomia-commons/)) contains a reviewer prompt that is an explicit **reconstruction** — the original was never preserved, and the document says so. It must not be read as an instruction any reviewer actually received, and it must not be set beside the verbatim prompts above as though it were equivalent evidence. For *Peership* and *The Peership Thesis* a reader can check what was asked. For ISONOMIA, they cannot.
+
+Two further notes. The published prompts are **dated historical records of what a reviewer was told**, not live manifests: paper V's prompt embeds version pins and DOIs current at the handoff date, and where those disagree with [`../VERSION_MANIFEST.md`](../VERSION_MANIFEST.md), the manifest controls. And an earlier version (v1.0) of the canonical review exists but is **deliberately not committed** — the operative document is v1.1, and the whole downstream chain (the re-review, the gate confirmation, the receipt, the PASS) answers *that* text. Shipping a superseded review beside the operative one would invite a reader to audit the dispositions against the wrong document.
 
 Prompts are published; **chat transcripts are not**, and no private material is exposed.
 
@@ -74,40 +76,50 @@ The claim that did **not** survive round 1 is worth stating, because the corpus 
 
 ### III. *The Isonomia Commons* (v1.1 deposited)
 
-**This paper is the exception, and the asymmetry is stated rather than hidden: no adversarial-review document exists for the deposited preprint.**
+This paper's review history is **real and substantial, but shaped differently from the others**, and the difference is what a reader needs to understand.
 
-The preprint was not drafted from scratch. It was derived from the ISONOMIA **whitepaper**, which had already been through an extensive development and review process of its own — the whitepaper is the reason ISONOMIA sits third in the canonical order, since its specification preceded *Constitution, Not Cage*. Because that scrutiny had already happened upstream, the review pass on the preprint itself was **short**, and it did not produce a standalone review document of the kind papers I, II, IV and V each have.
-
-What scrutiny this paper did receive, and where it lives:
-
-| Source of scrutiny | Where | What it is |
+| Document | Covers | Type |
 |---|---|---|
-| The whitepaper's own development process | A working session; **not committed** | Extensive, but a chat record. Per [`../PROVENANCE.md`](../PROVENANCE.md) §6 this corpus publishes prompts, not transcripts, so it is described here rather than reproduced. |
-| The living specification | [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) — `docs/ISONOMIA_Whitepaper_v0.6.3.md`, the Tier-1 launch spec, the simulation plan | The whitepaper and specs the preprint condenses |
-| Build-time interpretive record | That repo's `DECISIONS.md` and `BLOCKERS.md` | Where the specs were ambiguous, what was decided, and what could not be resolved |
-| Empirical work | That repo's `CALIBRATION.md`; a 45,000-run sweep pinned to release v1.0.0, commit `ba3ddb5`, DOI [10.5281/zenodo.21287289](https://doi.org/10.5281/zenodo.21287289) | Simulation evidence |
-| Citation verification | [`../reviews/corpus_verification_ledger_v1.md`](corpus_verification_ledger_v1.md) | The pre-mint verification pass covering the corpus's essays |
+| [`03-isonomia-commons/whitepaper_and_preprint_audit_trail.md`](03-isonomia-commons/whitepaper_and_preprint_audit_trail.md) | The whitepaper's adversarial development **and the DOI preprint's publication audit** | Audit trail / process record |
+| [`03-isonomia-commons/repo_whitepaper_audit_trail_summary.md`](03-isonomia-commons/repo_whitepaper_audit_trail_summary.md) | The repository-side view of the same development | Audit trail / process record |
 
-**None of that is a substitute for an adversarial review of the deposited paper, and it is not offered as one.** Simulation evidence in particular is not paper review: those simulations establish **sampled launch-economy behaviour only** — not constitutional legitimacy, and not a validation of Peership. See [`../implementations/isonomia.md`](../implementations/isonomia.md).
+**Five documented formal adversarial review cycles** ran against the whitepaper (AGORA v0.1 → ISONOMIA v0.6), and they were not cosmetic. They forced the design to give up its strongest claims:
 
-A reader comparing the five papers should know that **paper III received the least independent adversarial scrutiny as a paper**, and should weight its claims accordingly. Recording that is the point of this document.
+- **minted, transferable credit was removed** and replaced with mutual-credit settlement entries;
+- **"individually proven" became "individually precedented; composition unproven"**;
+- sovereignty claims were **narrowed**; legal and infrastructure dependence were **admitted** rather than denied;
+- the ideal constitution was **separated** from a bounded, falsifiable launch spec;
+- the harm floor was **narrowed** (contested categories removed);
+- the simulation kill-criterion was **rebuilt four times**, because it kept failing — first halting every honest launch, then false-positiving on honest transients, then missing genuine spirals.
 
-#### The upstream review: reviews held, dispositions public
+The preprint itself then went through a **publication audit** that caught substantive claim-discipline failures, not just packaging: ISONOMIA had been described as the design "at the center" of the corpus and as something that "instantiates Peership"; it used "the third stance," contradicting Peership's five-posture account; "citizen" risked conflating a protocol role with personhood; and the abstract leaned on completed simulation results the package did not yet contain. **v1.1 corrected all of these**, and replaced continuous-region stability language with sampled-point claims.
 
-Adversarial review notes on the **ISONOMIA release package** — the whitepaper, the Tier-1 launch spec, the Path A simulation plan, and the calibration record — exist and are **held unpublished**. They are implementation-side documents: they review the specification and its evidence, not *The Isonomia Commons* as a paper. They are **not committed here** and **not published in full**, because the [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) repository is **frozen** until a full release is scheduled. They are marked for release at that time, with the implementation record they belong to.
+#### How this differs from papers I, II, IV and V — and why it still counts for less
 
-**But the reviews being held does not make the upstream scrutiny unverifiable.** The *dispositions* — what the review actually changed — are already public, dated, and itemized in that repository, which is where the reader should go:
+Three specific deficits, stated plainly:
+
+1. **The review prompt was never preserved.** What the audit trail publishes is an explicit **reconstruction**, and it says so. Papers II and V publish their **actual, verbatim** prompts. So for ISONOMIA a reader *cannot* check what the reviewer was told to do — which is precisely the check this corpus insists on everywhere else.
+2. **No verbatim review document is published.** The raw review notes on the release package are **held** pending the frozen [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) repository's scheduled release. What is published here is a *summary of a process*, not the adversary's own text — a weaker artifact than the hostile reviews published for the other four papers.
+3. **Most of that scrutiny landed on the design and the package, not on the essay as an argument.** The five cycles reviewed a constitutional specification. The publication audit reviewed claims, framing, and metadata. Neither is the same thing as the essay-level hostile reviews that papers I, II, IV and V received.
+
+What *is* independently checkable today, without waiting for anything: the **dispositions** are public and dated in the ISONOMIA repository — the whitepaper changelog's entry titled *"adversarial-review response"*, the launch-spec changelog's claim-discipline pass, [`CALIBRATION.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/CALIBRATION.md)'s revision note, and [`DECISIONS.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/DECISIONS.md) #35, in which a spec↔code divergence was resolved **in the code's favour** — the specification was wrong and was corrected.
+
+**Simulation evidence is not paper review**, and none of it is offered as such. The 45,000-run sweep (pinned to release v1.0.0, commit `ba3ddb5`, DOI [10.5281/zenodo.21287289](https://doi.org/10.5281/zenodo.21287289)) establishes **sampled launch-economy behaviour only** — not constitutional legitimacy, and not a validation of Peership. The audit trail's own §12 lists what the process does *not* establish, and it is the most useful section in the document.
+
+The honest summary: **paper III was reviewed hard, but the least *checkably* of the five.** Its prompt is reconstructed, its review texts are held, and its scrutiny fell mainly on the design rather than the argument. Weight it accordingly.
+
+#### Where to check it yourself
+
+The raw review notes on the release package are held pending the frozen ISONOMIA repository's release. The **dispositions**, however, are already public and dated in that repository, and they are the thing worth checking:
 
 | Public record | What it evidences |
 |---|---|
 | [Whitepaper changelog](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/docs/ISONOMIA_Whitepaper_v0.6.3.md), v0.6 → v0.6.1 | An entry titled **"adversarial-review response"** — the review happened, and this is what it changed |
-| [Launch-spec changelog](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/docs/ISONOMIA_Tier1_Launch_Spec_v0.3.4.md), nine dated entries | Itemized revisions, including the v0.3.3 → v0.3.4 **claim-discipline** pass that restated overclaims in sampled-point terms and added an explicit no-claim-about-unsampled-points qualifier |
-| [`CALIBRATION.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/CALIBRATION.md) revision note | The same claim-discipline correction applied to the empirical record: "stable across the entire parameter space" → statements about the 300 sampled points only |
-| [`DECISIONS.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/DECISIONS.md) #35 | A spec↔code divergence caught by verification: the code was right, the spec text was wrong, and **the spec was corrected rather than the code** |
+| [Launch-spec changelog](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/docs/ISONOMIA_Tier1_Launch_Spec_v0.3.4.md), nine dated entries | Itemized revisions, including the v0.3.3 → v0.3.4 **claim-discipline** pass that restated overclaims in sampled-point terms |
+| [`CALIBRATION.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/CALIBRATION.md) revision note | The same correction applied to the empirical record: "stable across the entire parameter space" → statements about the 300 sampled points only |
+| [`DECISIONS.md`](https://github.com/dan-lee-odinson/isonomia-path-a/blob/main/DECISIONS.md) #35 | A spec↔code divergence resolved **in the code's favour** — the spec text was wrong and was corrected |
 
-Two details worth the reader's attention, because they are the kind of thing a corpus usually hides. The claim-discipline pass was **issued as a new version (v0.3.4) rather than a silent edit to v0.3.3**, precisely because v0.3.3 is the version embedded in the deposited preprint — the historical record was preserved instead of quietly overwritten. And the sampled-point correction is an admission *against interest*: it narrows what the 45,000-run sweep is allowed to claim.
-
-So the honest summary is: **the review documents are held; the record of what they changed is public.** A reader can verify that ISONOMIA's upstream material was adversarially reviewed and can see the corrections it produced. What they cannot yet do is read the reviews themselves and judge whether the dispositions were adequate. That remains open until the ISONOMIA release.
+Two details deserve emphasis, because they cut against the author's interest. The claim-discipline pass was **issued as a new version (v0.3.4) rather than a silent edit to v0.3.3**, precisely because v0.3.3 is the version embedded in the deposited preprint — the historical record was preserved rather than quietly overwritten. And the sampled-point correction **narrows** what the 45,000-run sweep may claim. Corrections that cost the author something are the ones worth weighing.
 
 ### IV. *Constitution, Not Cage* (v1.0 deposited)
 

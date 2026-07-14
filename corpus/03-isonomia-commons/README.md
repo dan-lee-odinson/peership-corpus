@@ -51,15 +51,19 @@ The frozen PDF's front matter mislabels ...21338480 as a concept DOI. The frozen
 
 ## Review status — read this before weighting the paper's claims
 
-**This is the one paper in the corpus with no adversarial-review document.**
+This paper was **reviewed hard, but the least *checkably* of the five.** Both halves of that sentence matter.
 
-Papers I, II, IV and V each went through their own adversarial review cycle, and the reviews and disposition records are published in [`reviews/`](../../reviews/). This paper did not. It was condensed from the ISONOMIA **whitepaper**, which had already been through an extensive development and review process upstream — that whitepaper is why ISONOMIA sits third in the canonical reading order — so the review pass on the preprint itself was **short** and produced no standalone review document.
+**It was reviewed hard.** The whitepaper this preprint condenses went through **five documented formal adversarial cycles**, and they cost the design its strongest claims: minted transferable credit was removed in favour of mutual credit; "individually proven" became "individually precedented, composition unproven"; sovereignty claims were narrowed; legal and infrastructure dependence were admitted; and the simulation kill-criterion was **rebuilt four times** because it kept failing. The preprint then went through a publication audit that caught substantive claim-discipline failures in the paper itself — it had called ISONOMIA the design "at the center" of the corpus and said it "instantiates Peership," both of which v1.1 corrected, along with replacing continuous-region stability language with sampled-point claims. The audit trails are published in [`reviews/03-isonomia-commons/`](../../reviews/03-isonomia-commons/).
 
-What scrutiny it did receive was of the specification and its evidence, not of the essay. That upstream review is real and it is **publicly evidenced**, though in the implementation repository rather than here: the whitepaper's changelog carries an entry titled *"adversarial-review response"*; the launch spec's changelog records a claim-discipline pass that restated overclaims in sampled-point terms; `CALIBRATION.md` carries the matching revision note; and `DECISIONS.md` #35 records a spec↔code divergence in which the **spec was corrected rather than the code**. The review documents themselves are held pending that repository's scheduled release.
+**But it is the least checkable.** Three deficits, relative to papers I, II, IV and V:
 
-**None of that is a substitute for adversarial review of this paper, and none of it is offered as one.** Simulation evidence is not paper review, and those simulations establish sampled launch-economy behaviour only.
+1. **Its review prompt was never preserved.** What is published is an explicit *reconstruction*. Papers II and V publish their **actual, verbatim** prompts, so a reader can confirm the reviewer was told to attack. For this paper, they cannot.
+2. **No verbatim review document is published.** The raw notes are held pending the ISONOMIA repository's scheduled release. What exists here is a summary of a process, not the adversary's own text.
+3. **Most of that scrutiny landed on the design and the package, not on the essay as an argument.**
 
-A reader comparing the five papers should know that **this one received the least independent adversarial scrutiny as a paper**, and weight its claims accordingly. The full account — including what is verifiable today and what is not — is in [`reviews/REVIEW_PROVENANCE.md`](../../reviews/REVIEW_PROVENANCE.md).
+What *is* independently checkable today: the dispositions are public and dated in the implementation repository — the whitepaper changelog's *"adversarial-review response"* entry, the launch spec's claim-discipline pass, `CALIBRATION.md`'s revision note, and `DECISIONS.md` #35, where a spec↔code divergence was resolved **in the code's favour**.
+
+**Simulation evidence is not paper review**, and none of it is offered as such. Weight this paper's claims accordingly. The full account is in [`reviews/REVIEW_PROVENANCE.md`](../../reviews/REVIEW_PROVENANCE.md).
 
 ## Files
 
