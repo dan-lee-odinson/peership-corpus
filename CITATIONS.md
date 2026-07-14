@@ -120,7 +120,7 @@ One institutional implementation hypothesis. Not a proof of Peership, and not th
 
 The title is capitalised as `THE ISONOMIA COMMONS` on the archived record; it is reproduced that way below.
 
-> **Caution — a third DOI you may encounter.** `10.5281/zenodo.21338480` is the **v1.0 exact-version DOI**, not a concept DOI. The paper's own front matter mislabels it as the concept DOI; ledger entry CL-D3 resolved this against the Zenodo API. The frozen PDF was not altered. Do not cite `...21338480` as a concept DOI, and do not cite it at all unless you specifically mean v1.0 rather than the current v1.1.
+> **A third DOI you may encounter — and it is a valid one.** `10.5281/zenodo.21338480` is the **v1.0 exact-version DOI**. It is not stale or superseded: it permanently pins v1.0, and it is the right thing to cite if v1.0 is what you mean. What is wrong is only its *label* — the paper's own front matter calls it the "concept DOI," which it is not. The concept (all-versions) DOI is `10.5281/zenodo.21338479`. Ledger entry CL-D3 resolved this against the Zenodo API; the frozen PDF was not altered. So: cite `…21338479` for the work as a whole, `…21343917` for the deposited v1.1, and `…21338480` only when you specifically mean v1.0 — but never call `…21338480` a concept DOI.
 
 **Plain text**
 

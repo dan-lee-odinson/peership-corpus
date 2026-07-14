@@ -9,15 +9,18 @@
 >    with the *real* prompts published for [*Peership*](../02-peership/) and [*The Peership Thesis*](../05-peership-thesis/),
 >    which are verbatim.
 >
-> 2. **§13's DOI table contains an error.** It gives the preprint **concept DOI** as `10.5281/zenodo.21338480`.
->    It is not. Per the Zenodo REST API (captured in [`../../apparatus/verification/`](../../apparatus/verification/))
->    and claim-ledger entry **CL-D3**:
->    - `10.5281/zenodo.21338479` — concept (all-versions) DOI
->    - `10.5281/zenodo.21338480` — **v1.0 exact-version** DOI
->    - `10.5281/zenodo.21343917` — v1.1 exact-version DOI (the deposited version)
+> 2. **§13's DOI table carries a wrong *caption*, not a wrong DOI.** It captions `10.5281/zenodo.21338480`
+>    "preprint concept DOI." That identifier is valid and permanent — it is the **v1.0 exact-version DOI**, and it
+>    is the right thing to cite when v1.0 is what you mean. Only the word *concept* is misapplied to it. The three
+>    identifiers, per the Zenodo REST API (captured in
+>    [`../../apparatus/verification/`](../../apparatus/verification/)) and claim-ledger entry **CL-D3**:
+>    - `10.5281/zenodo.21338479` — **concept (all-versions)** DOI; always resolves to the latest version
+>    - `10.5281/zenodo.21338480` — **v1.0 exact-version** DOI; permanently pins v1.0
+>    - `10.5281/zenodo.21343917` — **v1.1 exact-version** DOI; the deposited version
 >
->    The error is the same one carried by the ISONOMIA repository's own manifest. It is recorded, not patched, so
->    that the supplied record stays intact; see discrepancy **D5** in [`../../VERSION_MANIFEST.md`](../../VERSION_MANIFEST.md).
+>    **None of these is stale or superseded.** The same caption error appears in the ISONOMIA repository's manifest
+>    and in the paper's own front matter. It is recorded, not patched, so the supplied record stays intact; see
+>    discrepancy **D5** in [`../../VERSION_MANIFEST.md`](../../VERSION_MANIFEST.md).
 >
 > 3. **This is a process summary, not an independent peer review.** The document is explicit about that in §7 and
 >    §12, and §12 in particular is worth reading before any of the achievements listed elsewhere.

@@ -41,13 +41,15 @@ For the corpus's account of the relationship between the paper and the implement
 
 ## A note on the DOIs
 
-The identifiers in the header above are the API-verified ones. One subtlety must be flagged, because the paper's own front matter gets it wrong:
+This record has **three DOIs. All three are valid and permanent. None is stale.** They identify different objects:
 
-- [10.5281/zenodo.21338479](https://doi.org/10.5281/zenodo.21338479) is the **concept (all-versions) DOI**.
-- [10.5281/zenodo.21338480](https://doi.org/10.5281/zenodo.21338480) is the **v1.0 exact-version DOI**, not a concept DOI.
-- [10.5281/zenodo.21343917](https://doi.org/10.5281/zenodo.21343917) is the **v1.1 exact-version DOI** — the version archived here.
+| DOI | Identifies | Resolves to |
+|---|---|---|
+| [10.5281/zenodo.21338479](https://doi.org/10.5281/zenodo.21338479) | The **concept (all-versions)** DOI — the work as a whole | Always the latest version |
+| [10.5281/zenodo.21338480](https://doi.org/10.5281/zenodo.21338480) | The **v1.0 exact-version** DOI | Permanently, v1.0 |
+| [10.5281/zenodo.21343917](https://doi.org/10.5281/zenodo.21343917) | The **v1.1 exact-version** DOI — the version archived here | Permanently, v1.1 |
 
-The frozen PDF's front matter mislabels ...21338480 as a concept DOI. The frozen artifact has not been altered; ledger entry **CL-D3** resolved the discrepancy in favour of the Zenodo API, and this README records the correct reading. The separate `isonomia-path-a` repository's manifest still carries the old label; correcting it is out of scope for this corpus. See [`VERSION_MANIFEST.md`](../../VERSION_MANIFEST.md) (D5).
+One subtlety, because the paper's own front matter gets it wrong: it captions `…21338480` the "concept DOI." It is not — it is the v1.0 version DOI. **The identifier is fine; only the caption is wrong.** Cite `…21338480` freely whenever you mean v1.0 specifically; just never call it a concept DOI. The frozen artifact has not been altered. Ledger entry **CL-D3** resolved this against the Zenodo API, and this README records the correct reading. The `isonomia-path-a` manifest carries the same caption error; that repository is frozen, so the fix travels with its next release. See [`VERSION_MANIFEST.md`](../../VERSION_MANIFEST.md) (D5).
 
 ## Review status — read this before weighting the paper's claims
 

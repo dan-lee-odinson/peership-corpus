@@ -127,15 +127,23 @@ This is the discrepancy most likely to be misread, so it is stated precisely.
 
 **Controls:** for the corpus, the canonical order above; for the text of the frozen paper, the frozen paper. **Changed:** nothing in the PDFs. *Constitution, Not Cage* still says "third in a series" and will continue to say so. **Do not** cite that phrase as evidence that the canonical reading order is III = Constitution.
 
-### D5 — The other repository's manifest mislabels 10.5281/zenodo.21338480
+### D5 — A mislabelled DOI, not an invalid one: 10.5281/zenodo.21338480
 
-The `isonomia-path-a` repository's own `VERSION_MANIFEST.md` still labels **10.5281/zenodo.21338480** the preprint **"concept DOI."** It is not. Per the Zenodo API and ledger entry **CL-D3**:
+**Every ISONOMIA preprint DOI below is valid and permanent. None is stale, obsolete, or superseded.** The error is in a *label*, never in an identifier. Say so precisely, because "wrong concept DOI" is easily misheard as "bad DOI."
 
-- **10.5281/zenodo.21338479** is the **concept (all-versions) DOI**.
-- **10.5281/zenodo.21338480** is the **v1.0 exact-version DOI**.
+The preprint record has three identifiers, and they name three different objects:
 
-This is an ordinary version-vs-inclusive pair, not a dispute about which work is which. The ISONOMIA paper's own front matter carries the same mislabelling; CL-D3 resolved it.
-**Controls:** the Zenodo API, as recorded in CL-D3 and in this manifest. **Changed:** nothing outside this repository. Correcting the `isonomia-path-a` manifest is **out of scope** for this corpus build and remains open there.
+| DOI | What it identifies | Resolves to |
+|---|---|---|
+| **10.5281/zenodo.21338479** | The **concept (all-versions) DOI** — the work as a whole | Always the latest version |
+| **10.5281/zenodo.21338480** | The **v1.0 exact-version DOI** | Permanently, v1.0 |
+| **10.5281/zenodo.21343917** | The **v1.1 exact-version DOI** — the deposited version | Permanently, v1.1 |
+
+Zenodo's own record confirms this: its Versions panel lists v1.1 (`…21343917`) and v1.0 (`…21338480`), and states that all versions may be cited with `…21338479`.
+
+**The defect:** the `isonomia-path-a` repository's `VERSION_MANIFEST.md` — and the ISONOMIA paper's own front matter — label **`…21338480`** the **"concept DOI."** It is not; it is the v1.0 version DOI. `…21338480` remains a perfectly good identifier and should be cited whenever a reader means v1.0 specifically. Only the word *concept* attached to it is wrong. Ledger entry **CL-D3** resolved this against the Zenodo API.
+
+**Controls:** the Zenodo API, as captured in [`apparatus/verification/`](apparatus/verification/) and recorded in CL-D3. **Changed:** nothing outside this repository. The `isonomia-path-a` manifest correction is **deferred**: that repository is frozen until a full release is scheduled, so the fix travels with that release. See [`apparatus/corrections_log.md`](apparatus/corrections_log.md).
 
 ### D6 — No editable sources exist for papers I–IV
 
