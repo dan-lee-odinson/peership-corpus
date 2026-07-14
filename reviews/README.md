@@ -18,11 +18,14 @@ The adversarial-review record for the corpus, organized per paper.
 
 | Directory | Paper | Records |
 |---|---|---|
-| [`01-gods-and-slaves/`](01-gods-and-slaves/) | I. *Gods and Slaves* | 1 — adversarial cross-essay review of v1.1, judged against *Peership* v0.10 |
-| [`02-peership/`](02-peership/) | II. *Peership* | 12 — including **both review prompts**, the round-1 review that **failed** the draft, five integration/confirmation audits, and the final-round gate |
-| — | III. *The Isonomia Commons* | **Record pending.** A cycle was run; its document is not yet in this repository. Stated, not hidden. |
-| [`04-constitution-not-cage/`](04-constitution-not-cage/) | IV. *Constitution, Not Cage* | 4 — two adversarial rounds, a self-red-team, and the publication gate |
+| [`01-gods-and-slaves/`](01-gods-and-slaves/) | I. *Gods and Slaves* | 2 — the adversarial cross-essay review of v1.1, and the disposition record showing what v1.2 changed in response |
+| [`02-peership/`](02-peership/) | II. *Peership* | 14 — including **both review prompts**, the round-1 review that **failed** the draft, five integration/confirmation audits, two disposition records, and the final-round gate |
+| — | III. *The Isonomia Commons* | **No adversarial-review document exists for the deposited preprint.** It was derived from the ISONOMIA whitepaper, which had already been reviewed extensively upstream, so the preprint pass was short. The asymmetry is stated, not hidden — see [`REVIEW_PROVENANCE.md`](REVIEW_PROVENANCE.md). |
+| [`04-constitution-not-cage/`](04-constitution-not-cage/) | IV. *Constitution, Not Cage* | 5 — two adversarial rounds, a self-red-team, the publication gate, and a 41-patch disposition log |
 | [`05-peership-thesis/`](05-peership-thesis/) | V. *The Peership Thesis* | 7 — the four-round chain, the gate dispositions, and post-gate provenance |
+| [`corpus_verification_ledger_v1.md`](corpus_verification_ledger_v1.md) | Corpus-wide | The pre-mint citation-verification ledger — the document that **blocked the DOI mints** until every claim was pinned to a primary source |
+
+Each paper's record now has **both halves**: the reviews (what was objected to) and the dispositions (what the author actually changed, and what he declined). A review alone shows what a critic said; a disposition shows what was conceded.
 
 ## The prompts are published
 

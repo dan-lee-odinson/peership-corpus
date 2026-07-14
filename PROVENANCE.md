@@ -45,7 +45,9 @@ Every paper in this corpus was subjected to a hostile review process before it w
 
 The **four-round chain concluding on 14 July 2026 with a PASS** belongs specifically to **paper V, *The Peership Thesis*** (and its one-page companion). It is not a credential for papers I–IV, which cleared their own, earlier gates, and it must not be cited as though the whole corpus passed a single four-round review.
 
-The full record is in [`reviews/`](reviews/), organized per paper, and is non-authoritative: where a review and the frozen papers or the synchronized apparatus conflict, the papers and apparatus control. Papers I, II and IV each have their own review directory; *The Isonomia Commons* (III) has a review cycle whose record is not yet in this repository, and that gap is stated rather than glossed — see [`reviews/REVIEW_PROVENANCE.md`](reviews/REVIEW_PROVENANCE.md).
+The full record is in [`reviews/`](reviews/), organized per paper, and is non-authoritative: where a review and the frozen papers or the synchronized apparatus conflict, the papers and apparatus control. Each paper's directory holds **both halves** of its trail: the reviews, and the disposition records showing what was actually changed in response.
+
+**One paper is an exception, and it is stated rather than glossed.** *The Isonomia Commons* (III) has **no adversarial-review document** for its deposited preprint. The preprint was condensed from the ISONOMIA whitepaper, which had already been through an extensive review process upstream, so the pass on the preprint itself was short and produced no standalone review. A reader should know that paper III received the least independent adversarial scrutiny *as a paper*, and weight it accordingly. The full account, and what scrutiny it did receive, is in [`reviews/REVIEW_PROVENANCE.md`](reviews/REVIEW_PROVENANCE.md).
 
 The five documents of **paper V's** chain, in order:
 

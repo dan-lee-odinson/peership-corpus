@@ -49,6 +49,16 @@ The identifiers in the header above are the API-verified ones. One subtlety must
 
 The frozen PDF's front matter mislabels ...21338480 as a concept DOI. The frozen artifact has not been altered; ledger entry **CL-D3** resolved the discrepancy in favour of the Zenodo API, and this README records the correct reading. The separate `isonomia-path-a` repository's manifest still carries the old label; correcting it is out of scope for this corpus. See [`VERSION_MANIFEST.md`](../../VERSION_MANIFEST.md) (D5).
 
+## Review status — read this before weighting the paper's claims
+
+**This is the one paper in the corpus with no adversarial-review document.**
+
+Papers I, II, IV and V each went through their own adversarial review cycle, and the reviews and disposition records are published in [`reviews/`](../../reviews/). This paper did not. It was condensed from the ISONOMIA **whitepaper**, which had already been through an extensive development and review process upstream — that whitepaper is why ISONOMIA sits third in the canonical reading order — so the review pass on the preprint itself was **short** and produced no standalone review document.
+
+What scrutiny it did receive was of the specification and the simulations, not of the essay: the whitepaper and launch spec, the build-time `DECISIONS.md` and `BLOCKERS.md`, the calibration record, and the 45,000-run sweep. None of that is a substitute for adversarial review of the paper, and none of it is offered as one. **Simulation evidence is not paper review**, and those simulations establish sampled launch-economy behaviour only.
+
+A reader comparing the five papers should know that **this one received the least independent adversarial scrutiny as a paper**, and weight its claims accordingly. The full account is in [`reviews/REVIEW_PROVENANCE.md`](../../reviews/REVIEW_PROVENANCE.md).
+
 ## Files
 
 - `Lee-Odinson_2026_Isonomia-Commons_v1.1_preprint.pdf` — frozen published preprint. The byte content is identical to the Zenodo file, which is named `Lee-Odinson_2026_Isonomia-Commons_v1_1_preprint_UPDATE.pdf`; the repository copy is renamed under the filename-hygiene rule (see [`VERSION_MANIFEST.md`](../../VERSION_MANIFEST.md), D2).

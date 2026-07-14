@@ -30,8 +30,11 @@ Prompts are published; **chat transcripts are not**, and no private material is 
 | Document | Reviews | Type | Outcome |
 |---|---|---|---|
 | [`01-gods-and-slaves/cross_essay_review_v1.1.md`](01-gods-and-slaves/cross_essay_review_v1.1.md) | v1.1 | Adversarial cross-essay review, judged against *Peership* v0.10 | **Revise before sequential publication** |
+| [`01-gods-and-slaves/disposition_v1.1_to_v1.2.md`](01-gods-and-slaves/disposition_v1.1_to_v1.2.md) | v1.1 → v1.2 | **Disposition record** — eight findings, each with the exact before/after edit | What was actually changed, and what was declined |
 
 The review's charge was that the precursor contradicted its successor at the load-bearing joint — equivocating between subjecthood and peership, misclassifying theorists under its own taxonomy, distorting the *Dune* material, and misattributing citations. The verdict: *"Publish the essays in sequence only after revising the precursor to make its claims narrower and its terminology consistent with the successor."* The deposited version is **v1.2**, the revision that answered it.
+
+The disposition record is the other half: it shows, finding by finding, what the author actually did about each objection. A review on its own tells you what was said; a disposition tells you what was conceded.
 
 ### II. *Peership* (v1.0 deposited)
 
@@ -43,11 +46,13 @@ The longest chain in the corpus, and the harshest. The first review **failed** t
 | [`02-peership/round1_adversarial_review_v0.4.md`](02-peership/round1_adversarial_review_v0.4.md) | v0.4 | Hostile expert adversarial review | **FAIL — major revision.** *"The central exclusivity claim does not hold."* Do not publish until resolved. |
 | [`02-peership/round1_triage_v0.4.md`](02-peership/round1_triage_v0.4.md) | v0.4 | Author triage of the findings | Tiered into mandatory fixes, real hits, and reviewer overreach |
 | [`02-peership/integration_audit_v0.5.md`](02-peership/integration_audit_v0.5.md) | v0.5 | Integration audit | — |
+| [`02-peership/prose_decisions_v0.5.md`](02-peership/prose_decisions_v0.5.md) | v0.5 | **Disposition record** — the reviewer's *pure style/voice* objections, ruled on one by one | Seven findings: kept, cut, softened or demoted, each with a reason |
 | [`02-peership/PROMPT_round2_integration_audit.md`](02-peership/PROMPT_round2_integration_audit.md) | v0.6 | **Review prompt** (round 2) | — |
 | [`02-peership/integration_audit_v0.7.md`](02-peership/integration_audit_v0.7.md) | v0.7 | Integration audit | — |
 | [`02-peership/integration_audit_v0.8.md`](02-peership/integration_audit_v0.8.md) | v0.8 | Integration audit | — |
 | [`02-peership/integration_audit_v0.9.md`](02-peership/integration_audit_v0.9.md) | v0.9 | Integration audit | — |
 | [`02-peership/confirmation_audit_v0.10.md`](02-peership/confirmation_audit_v0.10.md) | v0.10 | Confirmation audit | — |
+| [`02-peership/disposition_v0.11_to_v0.12.md`](02-peership/disposition_v0.11_to_v0.12.md) | v0.11 → v0.12 | **Disposition record** — 14 numbered edits with exact before/after, from the verification ledger | What the citation-verification pass actually changed |
 | [`02-peership/round2_adversarial_review_v0.12.md`](02-peership/round2_adversarial_review_v0.12.md) | v0.12 | Round-two adversarial re-review (regression table) | **Split verdict** — the modest core claim survives; the stronger framing does not |
 | [`02-peership/round2_triage.md`](02-peership/round2_triage.md) | v0.12 → v0.13 | Author triage and dispositions | v0.13 built and applied |
 | [`02-peership/final_round_review_v0.13.md`](02-peership/final_round_review_v0.13.md) | v0.13 | Final-round publication-gate review | **Conditional pass** — make five publication-blocking corrections, then deposit |
@@ -56,11 +61,23 @@ The claim that did **not** survive round 1 is worth stating, because the corpus 
 
 ### III. *The Isonomia Commons* (v1.1 deposited)
 
-**Record pending.** A review cycle was run for this paper, but its record is not yet in this repository. It is not in the corpus's session outputs, and it is not in the [isonomia-path-a](https://github.com/dan-lee-odinson/isonomia-path-a) repository, which carries build-time `DECISIONS.md` and `BLOCKERS.md` rather than an essay-level review.
+**This paper is the exception, and the asymmetry is stated rather than hidden: no adversarial-review document exists for the deposited preprint.**
 
-This slot is deliberately left open rather than filled with a guess or quietly dropped. It will be completed when the record is supplied. **No claim is made here about the scope, rigour, or outcome of that review until its document is in hand.**
+The preprint was not drafted from scratch. It was derived from the ISONOMIA **whitepaper**, which had already been through an extensive development and review process of its own — the whitepaper is the reason ISONOMIA sits third in the canonical order, since its specification preceded *Constitution, Not Cage*. Because that scrutiny had already happened upstream, the review pass on the preprint itself was **short**, and it did not produce a standalone review document of the kind papers I, II, IV and V each have.
 
-Separately, and not a substitute for the above: the ISONOMIA *implementation* has its own evidence trail — a 45,000-run parameter sweep pinned to software release v1.0.0, commit `ba3ddb5` (DOI [10.5281/zenodo.21287289](https://doi.org/10.5281/zenodo.21287289)) — described in [`../implementations/isonomia.md`](../implementations/isonomia.md). Simulation evidence is not paper review, and those simulations establish sampled launch-economy behaviour only.
+What scrutiny this paper did receive, and where it lives:
+
+| Source of scrutiny | Where | What it is |
+|---|---|---|
+| The whitepaper's own development process | A working session; **not committed** | Extensive, but a chat record. Per [`../PROVENANCE.md`](../PROVENANCE.md) §6 this corpus publishes prompts, not transcripts, so it is described here rather than reproduced. |
+| The living specification | [`isonomia-path-a`](https://github.com/dan-lee-odinson/isonomia-path-a) — `docs/ISONOMIA_Whitepaper_v0.6.3.md`, the Tier-1 launch spec, the simulation plan | The whitepaper and specs the preprint condenses |
+| Build-time interpretive record | That repo's `DECISIONS.md` and `BLOCKERS.md` | Where the specs were ambiguous, what was decided, and what could not be resolved |
+| Empirical work | That repo's `CALIBRATION.md`; a 45,000-run sweep pinned to release v1.0.0, commit `ba3ddb5`, DOI [10.5281/zenodo.21287289](https://doi.org/10.5281/zenodo.21287289) | Simulation evidence |
+| Citation verification | [`../reviews/corpus_verification_ledger_v1.md`](corpus_verification_ledger_v1.md) | The pre-mint verification pass covering the corpus's essays |
+
+**None of that is a substitute for an adversarial review of the deposited paper, and it is not offered as one.** Simulation evidence in particular is not paper review: those simulations establish **sampled launch-economy behaviour only** — not constitutional legitimacy, and not a validation of Peership. See [`../implementations/isonomia.md`](../implementations/isonomia.md).
+
+A reader comparing the five papers should know that **paper III received the least independent adversarial scrutiny as a paper**, and should weight its claims accordingly. Recording that is the point of this document.
 
 ### IV. *Constitution, Not Cage* (v1.0 deposited)
 
@@ -70,6 +87,7 @@ Separately, and not a substitute for the above: the ISONOMIA *implementation* ha
 | [`04-constitution-not-cage/self_red_team_v0.2.md`](04-constitution-not-cage/self_red_team_v0.2.md) | v0.2 | Author's same-model self-red-team | Explicitly framed as a floor, not a substitute for external review |
 | [`04-constitution-not-cage/round2_adversarial_review_v0.2.md`](04-constitution-not-cage/round2_adversarial_review_v0.2.md) | v0.2 | Round-two adversarial review (regression table) | **Revise** — *"substantially better and still not publication-ready"* |
 | [`04-constitution-not-cage/final_publication_gate_review.md`](04-constitution-not-cage/final_publication_gate_review.md) | final draft | Final adversarial / publication-gate review | **Conditional pass** after surgical corrections; no further conceptual rewrite required |
+| [`04-constitution-not-cage/disposition_patch_log.md`](04-constitution-not-cage/disposition_patch_log.md) | v0.1 onward | **Disposition record** — a running log of 41 numbered patches, each with its rationale | The change-by-change trail from first draft to deposit |
 
 Note that the self-red-team document is the author reviewing his own draft with the same model that helped write it. It is included for completeness and is the weakest evidence in this directory; it is labelled as such in its own text.
 
@@ -88,6 +106,19 @@ The four-round chain, concluding **14 July 2026** with a **PASS**.
 | [`05-peership-thesis/post_gate_changes.md`](05-peership-thesis/post_gate_changes.md) | Dated post-gate revision provenance | — |
 
 The most consequential correction in this chain was doctrinal: draft 1 had broadened the thesis's antecedent to "enduringly subject to a shared institutional order," which materially widened the eligible parties. The reviewer caught it; the original wording — "enduringly governed by, and without feasible exit from, a shared basic structure" — was **restored**, and the withdrawal is disclosed in the published paper. See ledger entry **CL-T4**.
+
+## The corpus-wide verification ledger
+
+[`corpus_verification_ledger_v1.md`](corpus_verification_ledger_v1.md) is a working record, not a review, and it is worth reading because it is the document that **blocked the DOI mints**.
+
+It itemizes every open `[verify]` across the essays — one line per claim — and holds them to a stated standard: *"the exact claim in the essay text matches the primary source in hand, and the reference entry carries the pin (page, section, or URL) a hostile reviewer could follow in one step."* Items were ordered by what they blocked (*Peership* first, since it gated the first mint), and each closure names the edition actually consulted and the page pins recovered from it. When the ledger went green, the accumulated patches were applied and the papers were deposited.
+
+Its relationship to the published apparatus needs stating precisely, because these are easy to confuse:
+
+- **This ledger is a historical, pre-deposit working artifact.** It records the *verification pass* that cleared the essays for minting.
+- [`../apparatus/peership_claim_ledger.md`](../apparatus/peership_claim_ledger.md) is the **current, living provenance artifact** — 70 logged claims with sources, pinpoints, evidentiary strength, and counterevidence.
+
+The claim ledger is authoritative. The verification ledger is committed for the trail, not as a current statement of the corpus's provenance, and it should not be cited as one.
 
 ## What is deliberately not here
 
